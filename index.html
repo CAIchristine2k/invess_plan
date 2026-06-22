@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title data-i18n="meta_title">ODY — Espace Investisseurs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="assets/logoo.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Confidential bar -->
+  <div class="confbar">
+    <span class="confbar__dot" aria-hidden="true"></span>
+    <span data-i18n="confidential">Confidentiel — Réservé aux discussions d'investissement</span>
+  </div>
+
+  <!-- ============================ HEADER ============================ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#top" class="brand" aria-label="ODY">
+        <img src="assets/logoo.png" alt="ODY" class="brand__logo" width="69" height="40" />
+        <span class="brand__divider"></span>
+        <span class="brand__sub">Investor Space</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#ecosystem" class="nav__link" data-i18n="nav_ecosystem">Écosystème</a>
+        <a href="#snapshot" class="nav__link" data-i18n="nav_snapshot">Indicateurs</a>
+        <a href="#captable" class="nav__link" data-i18n="nav_captable">Capitalisation</a>
+        <a href="#funds" class="nav__link" data-i18n="nav_funds">Allocation</a>
+        <a href="#roadmap" class="nav__link" data-i18n="nav_roadmap">Feuille de route</a>
+        <a href="#traction" class="nav__link" data-i18n="nav_traction">Traction</a>
+      </nav>
+
+      <div class="header__actions">
+        <!-- Language selector -->
+        <div class="langsel" id="langsel">
+          <button class="langsel__btn" aria-haspopup="true" aria-expanded="false" id="langselBtn">
+            <svg class="langsel__globe" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"></circle>
+              <path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"></path>
+            </svg>
+            <span data-lang-current>FR</span>
+            <svg class="langsel__chev" viewBox="0 0 12 12" width="10" height="10" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="langsel__menu" role="menu">
+            <li><button role="menuitem" data-lang-option="fr">Français</button></li>
+            <li><button role="menuitem" data-lang-option="en">English</button></li>
+            <li><button role="menuitem" data-lang-option="zh">中文</button></li>
+          </ul>
+        </div>
+
+        <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <div class="mobilenav" id="mobilenav">
+      <a href="#ecosystem" class="mobilenav__link" data-i18n="nav_ecosystem">Écosystème</a>
+      <a href="#snapshot" class="mobilenav__link" data-i18n="nav_snapshot">Indicateurs</a>
+      <a href="#captable" class="mobilenav__link" data-i18n="nav_captable">Capitalisation</a>
+      <a href="#funds" class="mobilenav__link" data-i18n="nav_funds">Allocation</a>
+      <a href="#roadmap" class="mobilenav__link" data-i18n="nav_roadmap">Feuille de route</a>
+      <a href="#traction" class="mobilenav__link" data-i18n="nav_traction">Traction</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- ============================ HERO ============================ -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner reveal">
+        <span class="eyebrow" data-i18n="hero_eyebrow">Résumé exécutif</span>
+        <h1 class="hero__title" data-i18n="hero_title">ODY : le système d'exploitation du commerce local</h1>
+        <p class="hero__lead lead" data-i18n="hero_lead"></p>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="hero__stat-value">1 000+</span>
+            <span class="hero__stat-label" data-i18n="hero_stat1_label">Commerces ciblés (18 mois)</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-value">300 000+</span>
+            <span class="hero__stat-label" data-i18n="hero_stat2_label">Utilisateurs ciblés (18 mois)</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-value">200 000 €+</span>
+            <span class="hero__stat-label" data-i18n="hero_stat3_label">MRR ciblé (18 mois)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== COMPANY SNAPSHOT ====================== -->
+    <section class="section section--tint" id="snapshot">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="snap_eyebrow">Aperçu de l'entreprise</span>
+          <h2 class="section__title" data-i18n="snap_title">Objectifs à 18 mois</h2>
+          <p class="section__lead lead" data-i18n="snap_lead"></p>
+        </div>
+
+        <div class="kpi-grid">
+          <article class="kpi reveal">
+            <span class="kpi__value" data-i18n="snap_k1_value">1 000+</span>
+            <span class="kpi__label" data-i18n="snap_k1_label">Établissements marchands actifs</span>
+          </article>
+          <article class="kpi reveal">
+            <span class="kpi__value" data-i18n="snap_k2_value">300 000+</span>
+            <span class="kpi__label" data-i18n="snap_k2_label">Utilisateurs actifs</span>
+          </article>
+          <article class="kpi reveal">
+            <span class="kpi__value" data-i18n="snap_k3_value">200 000 €+</span>
+            <span class="kpi__label" data-i18n="snap_k3_label">Revenu mensuel récurrent</span>
+          </article>
+          <article class="kpi reveal">
+            <span class="kpi__value" data-i18n="snap_k4_value">3</span>
+            <span class="kpi__label" data-i18n="snap_k4_label">Pays d'expansion</span>
+          </article>
+          <article class="kpi kpi--accent reveal">
+            <span class="kpi__value" data-i18n="snap_k5_value">Lancement</span>
+            <span class="kpi__label" data-i18n="snap_k5_label">ODY Pay</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= ECOSYSTEM ========================= -->
+    <section class="section" id="ecosystem">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="eco_eyebrow">L'écosystème ODY</span>
+          <h2 class="section__title" data-i18n="eco_title">Trois couches complémentaires, une seule plateforme</h2>
+          <p class="section__lead lead" data-i18n="eco_lead"></p>
+        </div>
+
+        <!-- Ecosystem diagram -->
+        <div class="eco-diagram reveal" id="ecoDiagram"></div>
+
+        <!-- Three product cards -->
+        <div class="eco-grid">
+          <article class="eco-card eco-card--app reveal">
+            <div class="eco-card__head">
+              <span class="eco-card__tag" data-i18n="eco_app_tag">Couche consommateur</span>
+              <h3 class="eco-card__title" data-i18n="eco_app_title">ODY B2C</h3>
+            </div>
+            <p class="eco-card__desc" data-i18n="eco_app_desc"></p>
+            <ul class="eco-card__list">
+              <li data-i18n="eco_app_f1"></li>
+              <li data-i18n="eco_app_f2"></li>
+              <li data-i18n="eco_app_f3"></li>
+              <li data-i18n="eco_app_f4"></li>
+              <li data-i18n="eco_app_f5"></li>
+              <li data-i18n="eco_app_f6"></li>
+              <li data-i18n="eco_app_f7"></li>
+              <li data-i18n="eco_app_f8"></li>
+            </ul>
+          </article>
+
+          <article class="eco-card eco-card--pro reveal">
+            <div class="eco-card__head">
+              <span class="eco-card__tag" data-i18n="eco_pro_tag">Couche commerçant</span>
+              <h3 class="eco-card__title" data-i18n="eco_pro_title">ODY Pro</h3>
+            </div>
+            <p class="eco-card__desc" data-i18n="eco_pro_desc"></p>
+            <ul class="eco-card__list">
+              <li data-i18n="eco_pro_f1"></li>
+              <li data-i18n="eco_pro_f2"></li>
+              <li data-i18n="eco_pro_f3"></li>
+              <li data-i18n="eco_pro_f4"></li>
+              <li data-i18n="eco_pro_f5"></li>
+              <li data-i18n="eco_pro_f6"></li>
+              <li data-i18n="eco_pro_f7"></li>
+              <li data-i18n="eco_pro_f8"></li>
+              <li data-i18n="eco_pro_f9"></li>
+            </ul>
+          </article>
+
+          <article class="eco-card eco-card--pay reveal">
+            <div class="eco-card__head">
+              <span class="eco-card__tag" data-i18n="eco_pay_tag">Couche financière</span>
+              <h3 class="eco-card__title" data-i18n="eco_pay_title">ODY Pay</h3>
+            </div>
+            <p class="eco-card__desc" data-i18n="eco_pay_desc"></p>
+            <ul class="eco-card__list">
+              <li data-i18n="eco_pay_f1"></li>
+              <li data-i18n="eco_pay_f2"></li>
+              <li data-i18n="eco_pay_f3"></li>
+              <li data-i18n="eco_pay_f4"></li>
+              <li data-i18n="eco_pay_f5"></li>
+              <li data-i18n="eco_pay_f6"></li>
+            </ul>
+            <p class="eco-card__note" data-i18n="eco_pay_note"></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= CAP TABLE ========================= -->
+    <section class="section section--tint" id="captable">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="cap_eyebrow">Table de capitalisation</span>
+          <h2 class="section__title" data-i18n="cap_title"></h2>
+          <p class="section__lead lead" data-i18n="cap_lead"></p>
+        </div>
+
+        <div class="tabs reveal" id="capTabs">
+          <div class="tabs__nav" role="tablist">
+            <button class="tabs__btn is-active" role="tab" data-tab="current" data-i18n="cap_tab_current">Actuelle</button>
+            <button class="tabs__btn" role="tab" data-tab="post" data-i18n="cap_tab_post">Post-investissement</button>
+          </div>
+
+          <!-- CURRENT -->
+          <div class="tabs__panel is-active" data-panel="current">
+            <div class="cap-layout">
+              <div class="cap-chart">
+                <div id="capChartCurrent" class="donut-host"></div>
+              </div>
+              <div class="cap-info">
+                <h3 class="cap-info__title" data-i18n="cap_current_title"></h3>
+                <p class="cap-info__desc" data-i18n="cap_current_desc"></p>
+                <div class="table-wrap">
+                  <table class="cap-table">
+                    <thead>
+                      <tr>
+                        <th data-i18n="cap_th_shareholder">Actionnaire</th>
+                        <th data-i18n="cap_th_shares">Actions détenues</th>
+                        <th class="num" data-i18n="cap_th_ownership">Détention</th>
+                      </tr>
+                    </thead>
+                    <tbody id="capTableCurrentBody"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- POST -->
+          <div class="tabs__panel" data-panel="post">
+            <div class="cap-layout">
+              <div class="cap-chart">
+                <div id="capChartPost" class="donut-host"></div>
+              </div>
+              <div class="cap-info">
+                <h3 class="cap-info__title" data-i18n="cap_post_title"></h3>
+                <p class="cap-info__desc" data-i18n="cap_post_desc"></p>
+                <ul class="assumptions">
+                  <li data-i18n="cap_post_a2"></li>
+                </ul>
+                <div class="table-wrap">
+                  <table class="cap-table">
+                    <thead>
+                      <tr>
+                        <th data-i18n="cap_th_shareholder">Actionnaire</th>
+                        <th data-i18n="cap_th_shares">Actions détenues</th>
+                        <th class="num" data-i18n="cap_th_ownership">Détention</th>
+                      </tr>
+                    </thead>
+                    <tbody id="capTablePostBody"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================== FUNDRAISING OBJECTIVE =================== -->
+    <section class="section" id="objective">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="fund_eyebrow">Objectif de levée</span>
+          <h2 class="section__title" data-i18n="fund_title"></h2>
+          <p class="section__lead lead" data-i18n="fund_lead"></p>
+        </div>
+        <div class="levers">
+          <div class="lever reveal">
+            <span class="lever__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 4.5-8 4.5-8-4.5L12 3z"/><path d="M4 12l8 4.5 8-4.5"/><path d="M4 16.5l8 4.5 8-4.5"/></svg>
+            </span>
+            <span class="lever__label" data-i18n="fund_i1"></span>
+          </div>
+          <div class="lever reveal">
+            <span class="lever__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 9l1.2-4.2A1 1 0 0 1 6.2 4h11.6a1 1 0 0 1 1 .8L20 9"/><path d="M4.5 9.5a2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0 5 0 2.5 2.5 0 0 0 5 0"/><path d="M5 12v7h14v-7"/><path d="M10 19v-4h4v4"/></svg>
+            </span>
+            <span class="lever__label" data-i18n="fund_i2"></span>
+          </div>
+          <div class="lever reveal">
+            <span class="lever__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M2.8 20a6.2 6.2 0 0 1 12.4 0"/><path d="M16 5.2a3.2 3.2 0 0 1 0 6.1"/><path d="M17.5 14.2A6.2 6.2 0 0 1 21.2 20"/></svg>
+            </span>
+            <span class="lever__label" data-i18n="fund_i3"></span>
+          </div>
+          <div class="lever reveal">
+            <span class="lever__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3 10h18"/><path d="M7 15h4"/></svg>
+            </span>
+            <span class="lever__label" data-i18n="fund_i4"></span>
+          </div>
+          <div class="lever reveal">
+            <span class="lever__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.8 2.6 15.2 0 18M12 3c-2.6 2.8-2.6 15.2 0 18"/></svg>
+            </span>
+            <span class="lever__label" data-i18n="fund_i5"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= USE OF FUNDS ======================= -->
+    <section class="section section--tint" id="funds">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="funds_eyebrow">Allocation des fonds</span>
+          <h2 class="section__title" data-i18n="funds_title"></h2>
+          <p class="section__lead lead" data-i18n="funds_lead"></p>
+        </div>
+
+        <div class="funds-layout">
+          <div class="funds-chart reveal">
+            <div id="fundsDonut" class="donut-host donut-host--lg"></div>
+          </div>
+          <div class="funds-list" id="fundsList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= ROADMAP ========================= -->
+    <section class="section" id="roadmap">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="road_eyebrow">Feuille de route stratégique</span>
+          <h2 class="section__title" data-i18n="road_title">Feuille de route à 18 mois</h2>
+          <p class="section__lead lead" data-i18n="road_lead"></p>
+        </div>
+
+        <div class="timeline" id="timeline"></div>
+      </div>
+    </section>
+
+    <!-- ====================== VISION AT 18M ====================== -->
+    <section class="section section--dark" id="vision18">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow eyebrow--light" data-i18n="v18_eyebrow">Vision à 18 mois</span>
+          <h2 class="section__title section__title--light" data-i18n="v18_title">Le futur d'ODY</h2>
+          <p class="section__lead section__lead--light lead" data-i18n="v18_lead"></p>
+        </div>
+
+        <div class="orbit reveal" id="orbit">
+          <div class="orbit__core">
+            <span class="orbit__core-mark">ODY</span>
+          </div>
+          <div class="orbit__nodes" id="orbitNodes"></div>
+        </div>
+
+        <p class="vision18__outro reveal" data-i18n="v18_outro"></p>
+      </div>
+    </section>
+
+    <!-- ======================== TRACTION ======================== -->
+    <section class="section" id="traction">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="trac_eyebrow">Traction commerciale</span>
+          <h2 class="section__title" data-i18n="trac_title"></h2>
+          <p class="section__lead lead" data-i18n="trac_lead"></p>
+        </div>
+
+        <!-- Signed customers -->
+        <div class="traction-block reveal">
+          <div class="block-head">
+            <h3 class="block-head__title" data-i18n="signed_title">Clients signés</h3>
+            <span class="badge badge--soft" data-i18n="signed_note">Les données seront importées ultérieurement.</span>
+          </div>
+          <div class="table-wrap data-table-wrap">
+            <table class="data-table" id="signedTable">
+              <thead>
+                <tr>
+                  <th data-i18n="signed_th_company">Entreprise</th>
+                  <th data-i18n="signed_th_industry">Secteur</th>
+                  <th data-i18n="signed_th_country">Pays</th>
+                  <th data-i18n="signed_th_info">Informations</th>
+                  <th data-i18n="signed_th_status">Statut de déploiement</th>
+                </tr>
+              </thead>
+              <tbody id="signedBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Sales pipeline -->
+        <div class="traction-block reveal">
+          <div class="block-head">
+            <h3 class="block-head__title" data-i18n="pipe_title">Pipeline commercial</h3>
+          </div>
+          <p class="block-desc" data-i18n="pipe_desc"></p>
+          <div class="pipeline" id="pipelineBoard"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================= FINAL ========================= -->
+    <section class="section section--tint" id="final">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="final_eyebrow">En synthèse</span>
+          <h2 class="section__title" data-i18n="final_title"></h2>
+          <p class="section__lead lead" data-i18n="final_lead"></p>
+        </div>
+        <div class="final-stack">
+          <div class="final-layer reveal">
+            <span class="final-layer__step">1</span>
+            <div><h3 data-i18n="final_l1_title">ODY B2C</h3><p data-i18n="final_l1_sub"></p></div>
+          </div>
+          <div class="final-connector" aria-hidden="true"></div>
+          <div class="final-layer reveal">
+            <span class="final-layer__step">2</span>
+            <div><h3 data-i18n="final_l2_title">ODY Pro</h3><p data-i18n="final_l2_sub"></p></div>
+          </div>
+          <div class="final-connector" aria-hidden="true"></div>
+          <div class="final-layer reveal">
+            <span class="final-layer__step">3</span>
+            <div><h3 data-i18n="final_l3_title">ODY Pay</h3><p data-i18n="final_l3_sub"></p></div>
+          </div>
+        </div>
+        <p class="final-outro reveal" data-i18n="final_outro"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================= FOOTER CTA ========================= -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-cta reveal">
+        <h2 class="footer-cta__title" data-i18n="footer_cta_title"></h2>
+        <p class="footer-cta__desc" data-i18n="footer_cta_desc"></p>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-bottom__brand">
+          <span class="brand__mark">ODY</span>
+        </div>
+        <p class="footer-bottom__conf" data-i18n="footer_confidential"></p>
+        <p class="footer-bottom__rights">© <span id="year">2026</span> ODY. <span data-i18n="footer_rights">Tous droits réservés.</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/charts.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

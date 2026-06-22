@@ -209,7 +209,7 @@ const I18N = {
 
     road_1_title: "Croissance commerciale",
     road_1_intro: "ODY vise à devenir une plateforme de référence pour les commerces locaux.",
-    road_1_o1: "1 000+ établissements marchands actifs",
+    road_1_o1: "2 000+ établissements marchands actifs",
     road_1_o2: "Déploiement national d'ODY Pro",
     road_1_o3: "Partenariats stratégiques avec groupes de restauration et multi-sites",
     road_1_o4: "Augmentation continue du revenu par commerçant",
@@ -241,11 +241,11 @@ const I18N = {
     road_4_s6: "Services marchands additionnels",
 
     road_5_title: "Expansion internationale",
-    road_5_intro: "Déployer un modèle opérationnel scalable à l'international.",
-    road_5_o1: "Lancement des opérations dans 3 pays",
-    road_5_o2: "Constitution d'équipes et de partenariats locaux",
-    road_5_o3: "Adaptation de la plateforme aux marchés locaux",
-    road_5_o4: "Maintien d'un modèle opérationnel scalable",
+    road_5_intro: "Préparer une expansion internationale ciblée et économe en capital.",
+    road_5_o1: "Études de marché et choix d'un premier marché pilote",
+    road_5_o2: "Localisation et adaptation de la plateforme",
+    road_5_o3: "Partenariats stratégiques en vue du déploiement",
+    road_5_o4: "Lancement pilote sur un nouveau marché",
 
     // Vision at 18 months
     v18_eyebrow: "Vision à 18 mois",
@@ -253,7 +253,7 @@ const I18N = {
     v18_lead:
       "À l'issue des 18 prochains mois, ODY ambitionne de devenir une plateforme pleinement intégrée combinant découverte, fidélité, marketing, réservations et paiements.",
     v18_outro:
-      "Utilisée quotidiennement par des centaines de milliers de consommateurs et plus de 1 000 commerçants dans plusieurs pays.",
+      "Utilisée quotidiennement par des centaines de milliers de consommateurs et plus de 2 000 commerçants dans plusieurs pays.",
     v18_p1: "Découverte",
     v18_p2: "Fidélité",
     v18_p3: "Marketing",
@@ -510,7 +510,7 @@ const I18N = {
 
     road_1_title: "Commercial growth",
     road_1_intro: "ODY aims to become a leading platform for local businesses.",
-    road_1_o1: "1,000+ active merchant locations",
+    road_1_o1: "2,000+ active merchant locations",
     road_1_o2: "Nationwide deployment of ODY Pro",
     road_1_o3: "Strategic partnerships with restaurant groups and multi-site operators",
     road_1_o4: "Continuous increase in revenue per merchant",
@@ -542,18 +542,18 @@ const I18N = {
     road_4_s6: "Additional merchant services",
 
     road_5_title: "International expansion",
-    road_5_intro: "Deploy a scalable operating model internationally.",
-    road_5_o1: "Launch operations in 3 countries",
-    road_5_o2: "Build local teams and partnerships",
-    road_5_o3: "Adapt the platform to local markets",
-    road_5_o4: "Maintain a scalable operating model",
+    road_5_intro: "Prepare a focused, capital-efficient international expansion.",
+    road_5_o1: "Market research and selection of a first pilot market",
+    road_5_o2: "Localization and platform adaptation",
+    road_5_o3: "Strategic partnerships ahead of deployment",
+    road_5_o4: "Pilot launch in one new market",
 
     v18_eyebrow: "Vision at 18 months",
     v18_title: "The future of ODY",
     v18_lead:
       "At the end of the next 18 months, ODY aims to become a fully integrated platform combining discovery, loyalty, marketing, reservations and payments.",
     v18_outro:
-      "Used daily by hundreds of thousands of consumers and more than 1,000 merchants across multiple countries.",
+      "Used daily by hundreds of thousands of consumers and more than 2,000 merchants across multiple countries.",
     v18_p1: "Discovery",
     v18_p2: "Loyalty",
     v18_p3: "Marketing",
@@ -806,7 +806,7 @@ const I18N = {
 
     road_1_title: "商业增长",
     road_1_intro: "ODY 致力于成为本地商户的领先平台。",
-    road_1_o1: "1,000+ 活跃商户门店",
+    road_1_o1: "2,000+ 活跃商户门店",
     road_1_o2: "ODY Pro 全国部署",
     road_1_o3: "与餐饮集团及多门店运营商建立战略合作",
     road_1_o4: "持续提升单商户收入",
@@ -837,18 +837,18 @@ const I18N = {
     road_4_s6: "其他商户服务",
 
     road_5_title: "国际化扩张",
-    road_5_intro: "在国际市场部署可扩展的运营模式。",
-    road_5_o1: "在 3 个国家启动运营",
-    road_5_o2: "组建本地团队与合作伙伴",
-    road_5_o3: "使平台适应本地市场",
-    road_5_o4: "保持可扩展的运营模式",
+    road_5_intro: "为有针对性且资本高效的国际化扩张做准备。",
+    road_5_o1: "市场调研并选定首个试点市场",
+    road_5_o2: "本地化与平台适配",
+    road_5_o3: "为部署铺路的战略合作",
+    road_5_o4: "在一个新市场进行试点上线",
 
     v18_eyebrow: "18 个月愿景",
     v18_title: "ODY 的未来",
     v18_lead:
       "在未来 18 个月结束时，ODY 将成为一个完全集成的平台，融合发现、忠诚度、营销、预订与支付。",
     v18_outro:
-      "每天被数十万消费者和超过 1,000 家商户在多个国家使用。",
+      "每天被数十万消费者和超过 2,000 家商户在多个国家使用。",
     v18_p1: "发现",
     v18_p2: "忠诚度",
     v18_p3: "营销",

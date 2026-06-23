@@ -107,9 +107,9 @@ function fmtNum(n) {
 function renderCapTables() {
   // CURRENT — three founders, 10,000 shares total
   const current = [
-    { key: "f1", labelKey: "cap_founder1", shares: 3333, pct: 33.33, color: CAP_COLORS.f1 },
-    { key: "f2", labelKey: "cap_founder2", shares: 3334, pct: 33.33, color: CAP_COLORS.f2 },
-    { key: "f3", labelKey: "cap_founder3", shares: 3333, pct: 33.33, color: CAP_COLORS.f3 },
+    { key: "f1", labelKey: "cap_founder1", shares: 3000, pct: 33.33, color: CAP_COLORS.f1 },
+    { key: "f2", labelKey: "cap_founder2", shares: 3000, pct: 33.33, color: CAP_COLORS.f2 },
+    { key: "f3", labelKey: "cap_founder3", shares: 3000, pct: 33.33, color: CAP_COLORS.f3 },
   ];
   renderDonut(
     document.getElementById("capChartCurrent"),
@@ -132,10 +132,10 @@ function renderCapTables() {
   trTotal.innerHTML = `<td>Total</td><td>${fmtNum(currentTotal)}</td><td class="num">100%</td>`;
   cb.appendChild(trTotal);
 
-  // POST — new shares issued for 10% stake: 10,000 / 0.9 − 10,000 ≈ 1,111 → 11,111 total
+  // POST — founders keep 9,000 (90%), new investor 1,000 (10%) → 10,000 total
   const post = [
-    { key: "founders", labelKey: "cap_founders", shares: 10000, pct: 90, color: CAP_COLORS.founders },
-    { key: "investor", labelKey: "cap_investor", shares: 1111, pct: 10, color: CAP_COLORS.investor },
+    { key: "founders", labelKey: "cap_founders", shares: 9000, pct: 90, color: CAP_COLORS.founders },
+    { key: "investor", labelKey: "cap_investor", shares: 1000, pct: 10, color: CAP_COLORS.investor },
   ];
   renderDonut(
     document.getElementById("capChartPost"),
@@ -174,7 +174,7 @@ function fmtEur(amount) {
 const FUNDS = [
   { key: "f1", titleKey: "funds_1_title", pct: 30, color: "#8442FF", details: ["funds_1_d1","funds_1_d2","funds_1_d3","funds_1_d4","funds_1_d5","funds_1_d6","funds_1_d7"] },
   { key: "f2", titleKey: "funds_2_title", pct: 30, color: "#9E6BFF", details: ["funds_2_d1","funds_2_d2","funds_2_d3","funds_2_d4","funds_2_d5","funds_2_d6","funds_2_d7"] },
-  { key: "f3", titleKey: "funds_3_title", pct: 30, color: "#0F9D78", details: ["funds_3_d1"] },
+  { key: "f3", titleKey: "funds_3_title", pct: 30, color: "#0F9D78", details: ["funds_3_d1","funds_3_d2","funds_3_d3","funds_3_d4","funds_3_d5"] },
   { key: "f4", titleKey: "funds_4_title", pct: 5, color: "#C2820B", details: ["funds_4_d1","funds_4_d2","funds_4_d3","funds_4_d4","funds_4_d5"] },
   { key: "f5", titleKey: "funds_5_title", pct: 5, color: "#BE3455", details: ["funds_5_d1","funds_5_d2","funds_5_d3","funds_5_d4"] },
 ];
@@ -213,7 +213,7 @@ function renderFunds() {
         `<span class="fund-item__name">${t(f.titleKey)}</span>` +
         `<span class="fund-item__amount">${fmtEur((f.pct / 100) * RAISE_TOTAL)}</span>` +
         `<span class="fund-item__pct" style="color:${f.color}">${f.pct}%</span>` +
-        `<span class="fund-item__toggle">+</span>` +
+        `<span class="fund-item__toggle" aria-hidden="true"><svg viewBox="0 0 14 14" width="14" height="14"><path d="M3 5.5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>` +
       `</div>` +
       `<div class="fund-item__bar"><span style="background:${f.color}"></span></div>` +
       `<ul class="fund-item__list">${f.details.map((d) => `<li>${t(d)}</li>`).join("")}</ul>`;

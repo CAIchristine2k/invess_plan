@@ -66,6 +66,7 @@ const I18N = {
     eco_app_f6: "Partager contenus et expériences",
     eco_app_f7: "Interagir avec les commerces",
     eco_app_f8: "Payer via l'écosystème ODY",
+    eco_app_f9: "Gagner de l'argent en publiant (influenceurs)",
 
     eco_pro_tag: "Couche commerçant",
     eco_pro_title: "ODY Pro",
@@ -130,7 +131,7 @@ const I18N = {
 
     cap_current_title: "Table de capitalisation actuelle",
     cap_current_desc:
-      "ODY est actuellement détenue à 100 % par ses trois cofondateurs, pour un capital total de 10 000 actions.",
+      "ODY est actuellement détenue à 100 % par ses trois cofondateurs, pour un capital total de 9 000 actions.",
     cap_th_shareholder: "Actionnaire",
     cap_th_shares: "Actions détenues",
     cap_th_ownership: "Détention",
@@ -152,11 +153,11 @@ const I18N = {
     cap_post_a1: "Création d'un pool de BSPCE de 5 %",
     cap_post_a2: "Nouvel investisseur acquérant 10 % du capital post-money",
     cap_post_intro:
-      "La société est valorisée 9 M€ en pré-money (10 M€ post-money), avec un capital initial de 10 000 actions détenues à 100 % par les trois fondateurs. La levée de 1 M€ par émission de nouvelles actions porte l'investisseur à 10 % et l'équipe fondatrice à 90 %.",
+      "La société est valorisée 9 M€ en pré-money (10 M€ post-money), avec un capital initial de 9 000 actions détenues à 100 % par les trois fondateurs. La levée de 1 M€ par émission de 1 000 actions nouvelles porte l'investisseur à 10 % et l'équipe fondatrice à 90 %.",
     cap_post_logic_title: "Logique de calcul",
     cap_post_logic_1: "Valorisation pré-money = 10 − 1 = 9 M€ (post-money 10 M€)",
     cap_post_logic_2: "Investisseur 10 %, fondateurs 90 % au total",
-    cap_post_logic_3: "Les 10 000 actions existantes représentent 90 %, soit ≈ 1 111 actions nouvelles émises pour l'investisseur",
+    cap_post_logic_3: "Les 9 000 actions existantes représentent 90 %, soit 1 000 actions nouvelles émises pour l'investisseur",
 
     // Fundraising objective
     fund_eyebrow: "Objectif de levée",
@@ -198,11 +199,11 @@ const I18N = {
     funds_2_d7: "Notoriété de la marque",
 
     funds_3_title: "Acquisition commerçants (B2B)",
-    funds_3_d1: "Développement et acquisition de commerçants B2B : prospection de points de vente physiques, expansion de l'équipe commerciale, accompagnement à l'intégration et négociations avec les commerces de restauration, afin d'accroître rapidement le nombre de marchands partenaires.",
-    funds_3_d2: "Recrutements produit et ingénierie",
-    funds_3_d3: "Expansion du customer success",
-    funds_3_d4: "Onboarding des commerçants",
-    funds_3_d5: "Mise à l'échelle opérationnelle",
+    funds_3_d1: "Prospection de points de vente physiques",
+    funds_3_d2: "Expansion de l'équipe commerciale",
+    funds_3_d3: "Accompagnement à l'intégration des commerçants",
+    funds_3_d4: "Négociations avec les commerces de restauration",
+    funds_3_d5: "Croissance rapide du nombre de marchands partenaires",
 
     funds_4_title: "Expansion internationale",
     funds_4_d1: "Études de marché",
@@ -391,6 +392,7 @@ const I18N = {
     eco_app_f6: "Share content and experiences",
     eco_app_f7: "Interact with businesses",
     eco_app_f8: "Pay through the ODY ecosystem",
+    eco_app_f9: "Earn money by posting (influencers)",
 
     eco_pro_tag: "Merchant layer",
     eco_pro_title: "ODY Pro",
@@ -451,7 +453,7 @@ const I18N = {
     cap_tab_post: "Post-investment",
 
     cap_current_title: "Current cap table",
-    cap_current_desc: "ODY is currently 100% owned by its three co-founders, for a total of 10,000 shares.",
+    cap_current_desc: "ODY is currently 100% owned by its three co-founders, for a total of 9,000 shares.",
     cap_th_shareholder: "Shareholder",
     cap_th_shares: "Shares held",
     cap_th_ownership: "Ownership",
@@ -473,11 +475,11 @@ const I18N = {
     cap_post_a1: "Creation of a 5% BSPCE pool",
     cap_post_a2: "New investor acquiring 10% ownership post-money",
     cap_post_intro:
-      "The company is valued at €9M pre-money (€10M post-money), with an initial 10,000 shares fully held by the three founders. The €1M round, raised by issuing new shares, brings the investor to 10% and the founding team to 90%.",
+      "The company is valued at €9M pre-money (€10M post-money), with an initial 9,000 shares fully held by the three founders. The €1M round, raised by issuing 1,000 new shares, brings the investor to 10% and the founding team to 90%.",
     cap_post_logic_title: "Calculation logic",
     cap_post_logic_1: "Pre-money = 10 − 1 = €9M (post-money €10M)",
     cap_post_logic_2: "Investor 10%, founders 90% in total",
-    cap_post_logic_3: "The existing 10,000 shares represent 90%, i.e. ≈ 1,111 new shares issued to the investor",
+    cap_post_logic_3: "The existing 9,000 shares represent 90%, i.e. 1,000 new shares issued to the investor",
 
     fund_eyebrow: "Fundraising objective",
     fund_title: "Accelerating the next phase of growth",
@@ -517,11 +519,11 @@ const I18N = {
     funds_2_d7: "Brand awareness",
 
     funds_3_title: "B2B merchant acquisition",
-    funds_3_d1: "B2B merchant development: physical-store prospecting, sales-team expansion, onboarding support and negotiations with food & beverage merchants, to rapidly grow the number of partner merchants.",
-    funds_3_d2: "Product and engineering hires",
-    funds_3_d3: "Customer success expansion",
-    funds_3_d4: "Merchant onboarding",
-    funds_3_d5: "Operational scaling",
+    funds_3_d1: "Physical-store prospecting",
+    funds_3_d2: "Sales-team expansion",
+    funds_3_d3: "Merchant onboarding support",
+    funds_3_d4: "Negotiations with food & beverage merchants",
+    funds_3_d5: "Rapidly grow the number of partner merchants",
 
     funds_4_title: "International Expansion",
     funds_4_d1: "Market research",
@@ -705,6 +707,7 @@ const I18N = {
     eco_app_f6: "分享探店内容、消费体验",
     eco_app_f7: "与线下商户在线互动沟通",
     eco_app_f8: "通过 ODY 生态完成一站式支付",
+    eco_app_f9: "通过发布内容赚钱（达人 / 网红）",
 
     eco_pro_tag: "B 端商户层",
     eco_pro_title: "ODY Pro",
@@ -764,7 +767,7 @@ const I18N = {
     cap_tab_post: "投资后",
 
     cap_current_title: "融资前股权表",
-    cap_current_desc: "ODY 现阶段全部股权由三位创始人全额持有，总股本 10000 股，总持股 100%。",
+    cap_current_desc: "ODY 现阶段全部股权由三位创始人全额持有，总股本 9000 股，总持股 100%。",
     cap_th_shareholder: "股东",
     cap_th_shares: "持股数量",
     cap_th_ownership: "持股占比",
@@ -786,11 +789,11 @@ const I18N = {
     cap_post_a1: "设立 5% 的 BSPCE 期权池",
     cap_post_a2: "新投资方投后取得公司 10% 股权",
     cap_post_intro:
-      "本公司投前估值 900 万欧元，公司初始总股本为 10000 股，由三位创始人全额持有。本次计划融资 100 万欧元（投后估值 1000 万欧元），通过增发新股方式稀释股权，融资完成后投资方持有 10% 股份，创始团队合计持有 90% 股权。",
+      "本公司投前估值 900 万欧元，公司初始总股本为 9000 股，由三位创始人全额持有。本次计划融资 100 万欧元（投后估值 1000 万欧元），通过增发 1000 股新股稀释股权，融资完成后投资方持有 10% 股份，创始团队合计持有 90% 股权。",
     cap_post_logic_title: "测算逻辑",
     cap_post_logic_1: "投前估值 = 1000 − 100 = 900 万€（投后估值 1000 万€）",
     cap_post_logic_2: "投资方占股 10%，创始人合计 90%",
-    cap_post_logic_3: "原有 10000 股（90%），对应投资方增发 1111 股左右",
+    cap_post_logic_3: "原有 9000 股（90%），对应投资方增发 1000 股",
 
     fund_eyebrow: "融资目标",
     fund_title: "加速企业下一阶段高速增长",
@@ -829,11 +832,11 @@ const I18N = {
     funds_2_d7: "全域品牌曝光建设",
 
     funds_3_title: "B 端商户拓展（商家获客）",
-    funds_3_d1: "B 端商户开发拓展，用于线下门店招商、商户销售团队拓展、商家入驻扶持、餐饮实体商户商务洽谈等，快速扩充平台合作商家数量。",
-    funds_3_d2: "增补产品、技术岗位人才",
-    funds_3_d3: "扩容客户成功服务团队",
-    funds_3_d4: "搭建商户入驻落地服务体系",
-    funds_3_d5: "整体运营体系规模化升级",
+    funds_3_d1: "线下门店招商",
+    funds_3_d2: "商户销售团队拓展",
+    funds_3_d3: "商家入驻扶持",
+    funds_3_d4: "餐饮实体商户商务洽谈",
+    funds_3_d5: "快速扩充平台合作商家数量",
 
     funds_4_title: "海外市场拓展",
     funds_4_d1: "海外市场调研分析",

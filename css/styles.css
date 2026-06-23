@@ -408,8 +408,14 @@ html.lang-zh .lead { line-height: 1.85; }
 .fund-item.is-open .fund-item__list { display: grid; animation: tabIn .3s var(--ease); }
 .fund-item__list li { font-size: 13px; color: var(--gray-600); padding-left: 16px; position: relative; }
 .fund-item__list li::before { content: ""; position: absolute; left: 2px; top: 8px; width: 4px; height: 4px; border-radius: 50%; background: var(--gray-400); }
-.fund-item__toggle { font-size: 12px; color: var(--gray-400); margin-left: 8px; user-select: none; transition: transform .25s; }
-.fund-item.is-open .fund-item__toggle { transform: rotate(45deg); }
+.fund-item__toggle {
+  flex: 0 0 auto; margin-left: 8px; width: 28px; height: 28px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--accent-soft); color: var(--accent); user-select: none;
+  transition: transform .3s var(--ease), background .25s var(--ease), color .25s var(--ease);
+}
+.fund-item__top:hover .fund-item__toggle { background: var(--accent); color: #fff; }
+.fund-item.is-open .fund-item__toggle { transform: rotate(180deg); background: var(--accent); color: #fff; }
 
 /* ---------------------------------------------------------------- Fundraising levers */
 .levers { display: grid; grid-template-columns: repeat(5, 1fr); gap: 16px; }

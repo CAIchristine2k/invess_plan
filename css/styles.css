@@ -227,11 +227,11 @@ html.lang-zh .lead { line-height: 1.85; }
 .hero__lead { margin-top: 26px; max-width: 660px; font-size: 19px; }
 .hero__cta { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
 .hero__stats {
-  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
   margin-top: 64px; padding-top: 40px; border-top: 1px solid var(--gray-200);
 }
 .hero__stat { display: flex; flex-direction: column; gap: 6px; }
-.hero__stat-value { font-size: clamp(26px, 2.6vw, 36px); font-weight: 700; letter-spacing: -0.03em; color: var(--ink); white-space: nowrap; }
+.hero__stat-value { font-size: clamp(28px, 3.2vw, 38px); font-weight: 700; letter-spacing: -0.03em; color: var(--ink); }
 .hero__stat-label { font-size: 13.5px; color: var(--gray-500); font-weight: 500; }
 
 /* ---------------------------------------------------------------- Ecosystem diagram */
@@ -551,6 +551,78 @@ html.lang-zh .lead { line-height: 1.85; }
 .donut-center-value { font-weight: 800; letter-spacing: -0.03em; fill: var(--ink); }
 .donut-center-label { font-size: 12px; fill: var(--gray-500); font-weight: 500; }
 
+/* ---------------------------------------------------------------- Group structure (org chart) */
+#structure { --org-accent: #FF6B00; }
+.orgchart { max-width: 920px; margin: 8px auto 0; }
+.orgchart__top { display: flex; justify-content: center; }
+
+.org-card {
+  position: relative; border-radius: var(--radius-lg);
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  box-shadow: var(--shadow-sm);
+  transition: transform .6s var(--ease), box-shadow .6s var(--ease), border-color .6s var(--ease);
+  outline: none;
+}
+.org-card:focus-visible { box-shadow: 0 0 0 2px var(--org-accent); }
+
+.org-card--holding {
+  width: 100%; max-width: 460px; padding: 34px 40px; text-align: center;
+  box-shadow: var(--shadow-lg);
+}
+.org-card--holding::before {
+  content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: 54px; height: 3px; border-radius: 0 0 4px 4px; background: var(--org-accent);
+}
+.org-card--holding:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,107,0,.5);
+  box-shadow: 0 30px 70px rgba(16,16,24,.16), 0 0 30px rgba(255,107,0,.12);
+}
+.org-card__tag {
+  display: inline-block; font-size: 11.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--org-accent); margin-bottom: 12px;
+}
+.org-card__name { font-size: 22px; color: var(--ink); letter-spacing: -0.02em; }
+.org-card--holding .org-card__name { font-size: clamp(22px, 2.4vw, 28px); }
+.org-card__desc { font-size: 14px; line-height: 1.5; color: var(--gray-600); }
+.org-card--holding .org-card__desc { margin-top: 12px; max-width: 360px; margin-inline: auto; }
+
+/* Connector rail (drawn on scroll) */
+.org-rail { position: relative; height: 76px; }
+.org-rail span { position: absolute; background: var(--gray-300); }
+.org-rail__drop { top: 0; left: 50%; width: 2px; height: 38px; transform: translateX(-50%) scaleY(0); transform-origin: top; transition: transform .6s var(--ease); }
+.org-rail__bus { top: 37px; left: 16.5%; right: 16.5%; height: 2px; transform: scaleX(0); transform-origin: center; transition: transform .6s var(--ease) .25s; }
+.org-rail__leg { top: 37px; width: 2px; height: 39px; transform: translateX(-50%) scaleY(0); transform-origin: top; transition: transform .55s var(--ease) .45s; }
+.org-rail__leg--1 { left: 16.5%; }
+.org-rail__leg--2 { left: 50%; }
+.org-rail__leg--3 { left: 83.5%; }
+.orgchart.is-in .org-rail__drop { transform: translateX(-50%) scaleY(1); }
+.orgchart.is-in .org-rail__bus  { transform: scaleX(1); }
+.orgchart.is-in .org-rail__leg  { transform: translateX(-50%) scaleY(1); }
+
+/* Branches */
+.org-branches { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.org-branch { padding: 28px 24px 26px; text-align: center; }
+.org-branch__dot {
+  position: absolute; top: -6px; left: 50%; transform: translateX(-50%);
+  width: 11px; height: 11px; border-radius: 50%;
+  background: var(--org-accent); box-shadow: 0 0 0 4px rgba(255,107,0,.15);
+}
+.org-branch:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,107,0,.45);
+  box-shadow: var(--shadow-lg);
+}
+.org-branch .org-card__desc {
+  max-height: 0; opacity: 0; margin-top: 0; overflow: hidden;
+  transition: max-height .6s var(--ease), opacity .45s var(--ease), margin-top .45s var(--ease);
+}
+.org-branch:hover .org-card__desc,
+.org-branch:focus-within .org-card__desc { max-height: 96px; opacity: 1; margin-top: 12px; }
+.org-branch__cycle { display: inline-block; color: var(--org-accent); min-width: 3.5ch; transition: opacity .4s var(--ease); }
+.org-branch__cycle.is-fading { opacity: 0; }
+
 /* ---------------------------------------------------------------- Reveal animation */
 .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
 .reveal.is-in { opacity: 1; transform: none; }
@@ -580,7 +652,6 @@ html.lang-zh .lead { line-height: 1.85; }
   .funds-layout { grid-template-columns: 1fr; gap: 40px; }
   .eco-grid { grid-template-columns: 1fr; }
   .vlayers { grid-template-columns: 1fr; }
-  .hero__stats { grid-template-columns: repeat(2, 1fr); }
   .section { padding: 80px 0; }
 }
 
@@ -596,6 +667,17 @@ html.lang-zh .lead { line-height: 1.85; }
   .section__head { margin-bottom: 40px; }
   .tabs__nav { display: flex; width: 100%; overflow-x: auto; }
   .tabs__btn { flex: 1; white-space: nowrap; }
+
+  /* Group structure → vertical timeline */
+  .org-card--holding { max-width: 100%; padding: 28px 24px; text-align: left; }
+  .org-card--holding::before { left: 24px; transform: none; }
+  .org-card--holding .org-card__desc { margin-inline: 0; max-width: none; }
+  .org-rail { display: none; }
+  .org-branches { grid-template-columns: 1fr; gap: 16px; position: relative; margin-top: 28px; padding-left: 30px; }
+  .org-branches::before { content: ""; position: absolute; left: 9px; top: 6px; bottom: 18px; width: 2px; background: var(--gray-300); }
+  .org-branch { text-align: left; padding: 22px 22px; }
+  .org-branch__dot { top: 50%; left: -25px; transform: translateY(-50%); }
+  .org-branch .org-card__desc { max-height: 96px; opacity: 1; margin-top: 12px; }
 
   /* Roadmap → simplify rail */
   .timeline::before { left: 19px; }

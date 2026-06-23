@@ -96,6 +96,30 @@
     });
   }
 
+  /* ---------------------------------------------------- Group structure: rotating country */
+  let countryTimer = null;
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function setupCountryCycle() {
+    const el = document.getElementById("odyCountryCycle");
+    if (!el) return;
+    if (countryTimer) { clearInterval(countryTimer); countryTimer = null; }
+    const raw = (typeof t === "function") ? t("struct_country_cycle") : "";
+    const list = String(raw).split(",").map((s) => s.trim()).filter(Boolean);
+    if (!list.length) return;
+    let i = 0;
+    el.textContent = list[0];
+    if (reduceMotion || list.length < 2) return;
+    countryTimer = setInterval(() => {
+      el.classList.add("is-fading");
+      setTimeout(() => {
+        i = (i + 1) % list.length;
+        el.textContent = list[i];
+        el.classList.remove("is-fading");
+      }, 400);
+    }, 2600);
+  }
+  document.addEventListener("ody:langchange", setupCountryCycle);
+
   /* ---------------------------------------------------- Footer year */
   const yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
@@ -109,6 +133,7 @@
     booted = true;
     initLanguage();      // sets default FR + applies dictionary
     renderAllCharts();   // build all SVG charts/tables
+    setupCountryCycle(); // rotating ODY <country> label
     observeReveals();    // fade-in
     onScroll();
   }

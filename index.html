@@ -29,10 +29,11 @@
 
       <nav class="nav" aria-label="Primary">
         <a href="#ecosystem" class="nav__link" data-i18n="nav_ecosystem">Écosystème</a>
+        <a href="#structure" class="nav__link" data-i18n="nav_structure">Structure</a>
+        <a href="#snapshot" class="nav__link" data-i18n="nav_snapshot">Indicateurs</a>
         <a href="#captable" class="nav__link" data-i18n="nav_captable">Capitalisation</a>
         <a href="#funds" class="nav__link" data-i18n="nav_funds">Allocation</a>
         <a href="#roadmap" class="nav__link" data-i18n="nav_roadmap">Feuille de route</a>
-        <a href="#traction" class="nav__link" data-i18n="nav_traction">Traction</a>
       </nav>
 
       <div class="header__actions">
@@ -62,10 +63,11 @@
     <!-- Mobile nav -->
     <div class="mobilenav" id="mobilenav">
       <a href="#ecosystem" class="mobilenav__link" data-i18n="nav_ecosystem">Écosystème</a>
+      <a href="#structure" class="mobilenav__link" data-i18n="nav_structure">Structure</a>
+      <a href="#snapshot" class="mobilenav__link" data-i18n="nav_snapshot">Indicateurs</a>
       <a href="#captable" class="mobilenav__link" data-i18n="nav_captable">Capitalisation</a>
       <a href="#funds" class="mobilenav__link" data-i18n="nav_funds">Allocation</a>
       <a href="#roadmap" class="mobilenav__link" data-i18n="nav_roadmap">Feuille de route</a>
-      <a href="#traction" class="mobilenav__link" data-i18n="nav_traction">Traction</a>
     </div>
   </header>
 
@@ -90,10 +92,40 @@
             <span class="hero__stat-value">200 000 €+</span>
             <span class="hero__stat-label" data-i18n="hero_stat3_label">MRR ciblé (18 mois)</span>
           </div>
-          <div class="hero__stat">
-            <span class="hero__stat-value">1M+</span>
-            <span class="hero__stat-label" data-i18n="hero_stat4_label">personnes ont utilisé ODY</span>
-          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== COMPANY SNAPSHOT ====================== -->
+    <section class="section section--tint" id="snapshot">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="eyebrow" data-i18n="snap_eyebrow">Aperçu de l'entreprise</span>
+          <h2 class="section__title" data-i18n="snap_title">Objectifs à 18 mois</h2>
+          <p class="section__lead lead" data-i18n="snap_lead"></p>
+        </div>
+
+        <div class="kpi-grid">
+          <article class="kpi reveal">
+            <span class="kpi__value" data-i18n="snap_k1_value">2 000+</span>
+            <span class="kpi__label" data-i18n="snap_k1_label">Établissements marchands actifs</span>
+          </article>
+          <article class="kpi reveal">
+            <span class="kpi__value" data-i18n="snap_k2_value">300 000+</span>
+            <span class="kpi__label" data-i18n="snap_k2_label">Utilisateurs actifs</span>
+          </article>
+          <article class="kpi reveal">
+            <span class="kpi__value" data-i18n="snap_k3_value">200 000 €+</span>
+            <span class="kpi__label" data-i18n="snap_k3_label">Revenu mensuel récurrent</span>
+          </article>
+          <article class="kpi reveal">
+            <span class="kpi__value" data-i18n="snap_k4_value">3</span>
+            <span class="kpi__label" data-i18n="snap_k4_label">Pays d'expansion</span>
+          </article>
+          <article class="kpi kpi--accent reveal">
+            <span class="kpi__value" data-i18n="snap_k5_value">Lancement</span>
+            <span class="kpi__label" data-i18n="snap_k5_label">ODY Pay</span>
+          </article>
         </div>
       </div>
     </section>
@@ -127,7 +159,6 @@
               <li data-i18n="eco_app_f6"></li>
               <li data-i18n="eco_app_f7"></li>
               <li data-i18n="eco_app_f8"></li>
-              <li data-i18n="eco_app_f9"></li>
             </ul>
           </article>
 
@@ -138,6 +169,7 @@
             </div>
             <p class="eco-card__desc" data-i18n="eco_pro_desc"></p>
             <ul class="eco-card__list">
+              <li data-i18n="eco_pro_f1"></li>
               <li data-i18n="eco_pro_f2"></li>
               <li data-i18n="eco_pro_f3"></li>
               <li data-i18n="eco_pro_f4"></li>
@@ -162,11 +194,64 @@
               <li data-i18n="eco_pay_f4"></li>
               <li data-i18n="eco_pay_f5"></li>
               <li data-i18n="eco_pay_f6"></li>
-              <li data-i18n="eco_pay_f7"></li>
-              <li data-i18n="eco_pay_f8"></li>
             </ul>
             <p class="eco-card__note" data-i18n="eco_pay_note"></p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== GROUP STRUCTURE ====================== -->
+    <section class="section" id="structure">
+      <div class="container">
+        <div class="section__head section__head--center reveal">
+          <span class="eyebrow" data-i18n="struct_eyebrow">Organisation</span>
+          <h2 class="section__title" data-i18n="struct_title">Structure du Groupe ODY</h2>
+          <p class="section__lead lead" data-i18n="struct_lead"></p>
+        </div>
+
+        <div class="orgchart reveal">
+          <!-- Parent holding -->
+          <div class="orgchart__top">
+            <article class="org-card org-card--holding" tabindex="0">
+              <span class="org-card__tag" data-i18n="struct_holding_tag">Holding faîtière</span>
+              <h3 class="org-card__name" data-i18n="struct_holding_name">ODY International Holding</h3>
+              <p class="org-card__desc" data-i18n="struct_holding_desc"></p>
+            </article>
+          </div>
+
+          <!-- Connectors (drawn on scroll) -->
+          <div class="org-rail" aria-hidden="true">
+            <span class="org-rail__drop"></span>
+            <span class="org-rail__bus"></span>
+            <span class="org-rail__leg org-rail__leg--1"></span>
+            <span class="org-rail__leg org-rail__leg--2"></span>
+            <span class="org-rail__leg org-rail__leg--3"></span>
+          </div>
+
+          <!-- Branches -->
+          <div class="org-branches reveal-stagger">
+            <article class="org-card org-branch" tabindex="0">
+              <span class="org-branch__dot" aria-hidden="true"></span>
+              <h3 class="org-card__name" data-i18n="struct_fr_name">ODY France</h3>
+              <p class="org-card__desc" data-i18n="struct_fr_desc"></p>
+            </article>
+
+            <article class="org-card org-branch org-branch--dynamic" tabindex="0">
+              <span class="org-branch__dot" aria-hidden="true"></span>
+              <h3 class="org-card__name">
+                <span data-i18n="struct_country_label">ODY</span>
+                <span class="org-branch__cycle" id="odyCountryCycle">Country</span>
+              </h3>
+              <p class="org-card__desc" data-i18n="struct_country_desc"></p>
+            </article>
+
+            <article class="org-card org-branch" tabindex="0">
+              <span class="org-branch__dot" aria-hidden="true"></span>
+              <h3 class="org-card__name" data-i18n="struct_ventures_name">Other related project</h3>
+              <p class="org-card__desc" data-i18n="struct_ventures_desc"></p>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -313,68 +398,6 @@
         </div>
 
         <div class="timeline" id="timeline"></div>
-      </div>
-    </section>
-
-    <!-- ====================== VISION AT 18M ====================== -->
-    <section class="section section--dark" id="vision18">
-      <div class="container">
-        <div class="section__head section__head--center reveal">
-          <span class="eyebrow eyebrow--light" data-i18n="v18_eyebrow">Vision à 18 mois</span>
-          <h2 class="section__title section__title--light" data-i18n="v18_title">Le futur d'ODY</h2>
-          <p class="section__lead section__lead--light lead" data-i18n="v18_lead"></p>
-        </div>
-
-        <div class="orbit reveal" id="orbit">
-          <div class="orbit__core">
-            <span class="orbit__core-mark">ODY</span>
-          </div>
-          <div class="orbit__nodes" id="orbitNodes"></div>
-        </div>
-
-        <p class="vision18__outro reveal" data-i18n="v18_outro"></p>
-      </div>
-    </section>
-
-    <!-- ======================== TRACTION ======================== -->
-    <section class="section" id="traction">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="eyebrow" data-i18n="trac_eyebrow">Traction commerciale</span>
-          <h2 class="section__title" data-i18n="trac_title"></h2>
-          <p class="section__lead lead" data-i18n="trac_lead"></p>
-        </div>
-
-        <!-- Signed customers -->
-        <div class="traction-block reveal">
-          <div class="block-head">
-            <h3 class="block-head__title" data-i18n="signed_title">Clients signés</h3>
-            <span class="badge badge--soft" data-i18n="signed_note">Les données seront importées ultérieurement.</span>
-          </div>
-          <div class="table-wrap data-table-wrap">
-            <table class="data-table" id="signedTable">
-              <thead>
-                <tr>
-                  <th data-i18n="signed_th_company">Entreprise</th>
-                  <th data-i18n="signed_th_industry">Secteur</th>
-                  <th data-i18n="signed_th_country">Pays</th>
-                  <th data-i18n="signed_th_info">Informations</th>
-                  <th data-i18n="signed_th_status">Statut de déploiement</th>
-                </tr>
-              </thead>
-              <tbody id="signedBody"></tbody>
-            </table>
-          </div>
-        </div>
-
-        <!-- Sales pipeline -->
-        <div class="traction-block reveal">
-          <div class="block-head">
-            <h3 class="block-head__title" data-i18n="pipe_title">Pipeline commercial</h3>
-          </div>
-          <p class="block-desc" data-i18n="pipe_desc"></p>
-          <div class="pipeline" id="pipelineBoard"></div>
-        </div>
       </div>
     </section>
 

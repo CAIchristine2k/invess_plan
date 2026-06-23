@@ -107,9 +107,9 @@ function fmtNum(n) {
 function renderCapTables() {
   // CURRENT — three founders, 10,000 shares total
   const current = [
-    { key: "f1", labelKey: "cap_founder1", shares: 3334, pct: 33.34, color: CAP_COLORS.f1 },
+    { key: "f1", labelKey: "cap_founder1", shares: 3333, pct: 33.33, color: CAP_COLORS.f1 },
     { key: "f2", labelKey: "cap_founder2", shares: 3333, pct: 33.33, color: CAP_COLORS.f2 },
-    { key: "f3", labelKey: "cap_founder3", shares: 3333, pct: 33.33, color: CAP_COLORS.f3 },
+    { key: "f3", labelKey: "cap_founder3", shares: 3334, pct: 33.33, color: CAP_COLORS.f3 },
   ];
   renderDonut(
     document.getElementById("capChartCurrent"),
@@ -126,9 +126,10 @@ function renderCapTables() {
       `<td class="num cap-pct">${c.pct.toFixed(2)}%</td>`;
     cb.appendChild(tr);
   });
+  const currentTotal = current.reduce((s, c) => s + c.shares, 0);
   const trTotal = document.createElement("tr");
   trTotal.className = "is-total";
-  trTotal.innerHTML = `<td>Total</td><td>${fmtNum(TOTAL_SHARES)}</td><td class="num">100%</td>`;
+  trTotal.innerHTML = `<td>Total</td><td>${fmtNum(currentTotal)}</td><td class="num">100%</td>`;
   cb.appendChild(trTotal);
 
   // POST — founders 90% + investor 10% (10,000 shares total)
@@ -170,10 +171,10 @@ function fmtEur(amount) {
   }
 }
 const FUNDS = [
-  { key: "f1", titleKey: "funds_1_title", pct: 30, color: "#4338CA", details: ["funds_1_d1","funds_1_d2","funds_1_d3","funds_1_d4","funds_1_d5","funds_1_d6","funds_1_d7"] },
+  { key: "f1", titleKey: "funds_1_title", pct: 35, color: "#4338CA", details: ["funds_1_d1","funds_1_d2","funds_1_d3","funds_1_d4","funds_1_d5","funds_1_d6","funds_1_d7"] },
   { key: "f2", titleKey: "funds_2_title", pct: 30, color: "#6366F1", details: ["funds_2_d1","funds_2_d2","funds_2_d3","funds_2_d4","funds_2_d5","funds_2_d6","funds_2_d7"] },
-  { key: "f3", titleKey: "funds_3_title", pct: 30, color: "#0F9D78", details: ["funds_3_d1","funds_3_d2","funds_3_d3","funds_3_d4","funds_3_d5"] },
-  { key: "f4", titleKey: "funds_4_title", pct: 5, color: "#C2820B", details: ["funds_4_d1","funds_4_d2","funds_4_d3","funds_4_d4","funds_4_d5"] },
+  { key: "f3", titleKey: "funds_3_title", pct: 20, color: "#0F9D78", details: ["funds_3_d1","funds_3_d2","funds_3_d3","funds_3_d4","funds_3_d5"] },
+  { key: "f4", titleKey: "funds_4_title", pct: 10, color: "#C2820B", details: ["funds_4_d1","funds_4_d2","funds_4_d3","funds_4_d4","funds_4_d5"] },
   { key: "f5", titleKey: "funds_5_title", pct: 5, color: "#BE3455", details: ["funds_5_d1","funds_5_d2","funds_5_d3","funds_5_d4"] },
 ];
 
@@ -415,9 +416,6 @@ function renderAllCharts() {
   renderCapTables();
   renderFunds();
   renderRoadmap();
-  renderOrbit();
-  renderSignedTable();
-  renderPipeline();
 }
 
 // Re-render translated charts on language change

@@ -27,9 +27,9 @@ const I18N = {
     hero_title: "ODY : le système d'exploitation du commerce local",
     hero_lead:
       "ODY développe un écosystème complet conçu pour aider les commerces locaux à attirer des clients, augmenter la rétention, générer des revenus et piloter leurs opérations depuis une plateforme unique.",
-    hero_stat1_label: "Commerces ciblés (18 mois)",
-    hero_stat2_label: "Utilisateurs ciblés (18 mois)",
-    hero_stat3_label: "Chiffre d'affaires mensuel ciblé (18 mois)",
+    hero_stat1_label: "Commerces ciblés (12 mois)",
+    hero_stat2_label: "Utilisateurs ciblés (12 mois)",
+    hero_stat3_label: "Chiffre d'affaires mensuel ciblé (12 mois)",
     hero_cta_primary: "Demander l'accès à la data room",
     hero_cta_secondary: "Découvrir l'écosystème",
 
@@ -104,7 +104,7 @@ const I18N = {
 
     // Company Snapshot
     snap_eyebrow: "Aperçu de l'entreprise",
-    snap_title: "Objectifs à 18 mois",
+    snap_title: "Objectifs à 12 mois",
     snap_lead:
       "Des objectifs ambitieux mais structurés, alignés sur une exécution disciplinée et un modèle de revenus récurrents.",
     snap_k1_value: "2 000+",
@@ -150,7 +150,13 @@ const I18N = {
     cap_post_title: "Table de capitalisation post-investissement",
     cap_post_desc: "Hypothèses retenues :",
     cap_post_a1: "Création d'un pool de BSPCE de 5 %",
-    cap_post_a2: "Nouvel investisseur acquérant 10 % du capital post-money",
+    cap_post_a2: "Nouvel investisseur acquérant ≈ 9,09 % du capital post-money",
+    cap_post_intro:
+      "La société est valorisée 10 M€ en pré-money, avec un capital initial de 10 000 actions détenues à 100 % par les trois fondateurs. La levée de 1 M€ s'effectue par émission de nouvelles actions : à l'issue de l'opération, l'investisseur détient environ 9,09 % et l'équipe fondatrice le reste.",
+    cap_post_logic_title: "Logique de calcul",
+    cap_post_logic_1: "Valorisation pré-money 10 M€ + levée 1 M€ → valorisation post-money 11 M€",
+    cap_post_logic_2: "Part de l'investisseur = 100 / 1 100 ≈ 9,09 %",
+    cap_post_logic_3: "Les 10 000 actions existantes représentent 90,91 %, soit ≈ 1 000 actions nouvelles émises",
 
     // Fundraising objective
     fund_eyebrow: "Objectif de levée",
@@ -182,7 +188,7 @@ const I18N = {
     funds_1_d6: "Scalabilité de la plateforme",
     funds_1_d7: "Futures capacités d'IA",
 
-    funds_2_title: "Acquisition & Marketing",
+    funds_2_title: "Acquisition utilisateurs (B2C)",
     funds_2_d1: "Campagnes d'acquisition B2B ciblant restaurants et commerces locaux",
     funds_2_d2: "Stratégie de contenu et d'influence à grande échelle",
     funds_2_d3: "Programmes d'ambassadeurs",
@@ -191,8 +197,8 @@ const I18N = {
     funds_2_d6: "SEO et partenariats",
     funds_2_d7: "Notoriété de la marque",
 
-    funds_3_title: "Recrutement & Opérations",
-    funds_3_d1: "Croissance de l'équipe commerciale",
+    funds_3_title: "Acquisition commerçants (B2B)",
+    funds_3_d1: "Développement et acquisition de commerçants B2B : prospection de points de vente physiques, expansion de l'équipe commerciale, accompagnement à l'intégration et négociations avec les commerces de restauration, afin d'accroître rapidement le nombre de marchands partenaires.",
     funds_3_d2: "Recrutements produit et ingénierie",
     funds_3_d3: "Expansion du customer success",
     funds_3_d4: "Onboarding des commerçants",
@@ -213,7 +219,7 @@ const I18N = {
 
     // Roadmap
     road_eyebrow: "Feuille de route stratégique",
-    road_title: "Feuille de route à 18 mois",
+    road_title: "Feuille de route à 12 mois",
     road_lead:
       "Cinq chantiers stratégiques structurent l'exécution sur les 18 prochains mois.",
 
@@ -257,8 +263,8 @@ const I18N = {
     road_5_o3: "Adaptation de la plateforme aux marchés locaux",
     road_5_o4: "Maintien d'un modèle opérationnel scalable",
 
-    // Vision at 18 months
-    v18_eyebrow: "Vision à 18 mois",
+    // Vision at 12 months
+    v18_eyebrow: "Vision à 12 mois",
     v18_title: "Le futur d'ODY",
     v18_lead:
       "À l'issue des 18 prochains mois, ODY ambitionne de devenir une plateforme pleinement intégrée combinant découverte, fidélité, marketing, réservations et paiements.",
@@ -347,9 +353,9 @@ const I18N = {
     hero_title: "ODY: Building the operating system for local commerce",
     hero_lead:
       "ODY is building a complete ecosystem designed to help local businesses attract customers, increase retention, generate revenue and manage operations through a single platform.",
-    hero_stat1_label: "Target merchant locations (18 mo)",
-    hero_stat2_label: "Target active users (18 mo)",
-    hero_stat3_label: "Target monthly revenue (18 mo)",
+    hero_stat1_label: "Target merchant locations (12 mo)",
+    hero_stat2_label: "Target active users (12 mo)",
+    hero_stat3_label: "Target monthly revenue (12 mo)",
     hero_cta_primary: "Request data room access",
     hero_cta_secondary: "Explore the ecosystem",
 
@@ -421,7 +427,7 @@ const I18N = {
     vision_c3_items: "Payments · Transaction processing · Financial services",
 
     snap_eyebrow: "Company snapshot",
-    snap_title: "18-month targets",
+    snap_title: "12-month targets",
     snap_lead:
       "Ambitious yet structured targets, aligned with disciplined execution and a recurring revenue model.",
     snap_k1_value: "2,000+",
@@ -465,7 +471,13 @@ const I18N = {
     cap_post_title: "Post-investment cap table",
     cap_post_desc: "Assumptions:",
     cap_post_a1: "Creation of a 5% BSPCE pool",
-    cap_post_a2: "New investor acquiring 10% ownership post-money",
+    cap_post_a2: "New investor acquiring ≈ 9.09% ownership post-money",
+    cap_post_intro:
+      "The company is valued at €10M pre-money, with an initial 10,000 shares fully held by the three founders. The €1M round is raised by issuing new shares: post-round, the investor holds about 9.09% and the founding team the remainder.",
+    cap_post_logic_title: "Calculation logic",
+    cap_post_logic_1: "€10M pre-money + €1M raised → €11M post-money valuation",
+    cap_post_logic_2: "Investor stake = 100 / 1,100 ≈ 9.09%",
+    cap_post_logic_3: "The existing 10,000 shares represent 90.91%, i.e. ≈ 1,000 new shares issued",
 
     fund_eyebrow: "Fundraising objective",
     fund_title: "Accelerating the next phase of growth",
@@ -495,7 +507,7 @@ const I18N = {
     funds_1_d6: "Platform scalability",
     funds_1_d7: "Future AI capabilities",
 
-    funds_2_title: "Customer Acquisition & Marketing",
+    funds_2_title: "B2C user acquisition",
     funds_2_d1: "B2B acquisition campaigns targeting restaurants and local businesses",
     funds_2_d2: "Large-scale content and influencer strategy",
     funds_2_d3: "Ambassador programs",
@@ -504,8 +516,8 @@ const I18N = {
     funds_2_d6: "SEO and partnerships",
     funds_2_d7: "Brand awareness",
 
-    funds_3_title: "Recruitment & Operations",
-    funds_3_d1: "Sales team growth",
+    funds_3_title: "B2B merchant acquisition",
+    funds_3_d1: "B2B merchant development: physical-store prospecting, sales-team expansion, onboarding support and negotiations with food & beverage merchants, to rapidly grow the number of partner merchants.",
     funds_3_d2: "Product and engineering hires",
     funds_3_d3: "Customer success expansion",
     funds_3_d4: "Merchant onboarding",
@@ -525,8 +537,8 @@ const I18N = {
     funds_5_d4: "Accounting fees",
 
     road_eyebrow: "Strategic roadmap",
-    road_title: "18-month strategic roadmap",
-    road_lead: "Five strategic workstreams structure execution over the next 18 months.",
+    road_title: "12-month strategic roadmap",
+    road_lead: "Five strategic workstreams structure execution over the next 12 months.",
 
     road_1_title: "Commercial growth",
     road_1_intro: "ODY aims to become a leading platform for local businesses.",
@@ -568,10 +580,10 @@ const I18N = {
     road_5_o3: "Adapt the platform to local markets",
     road_5_o4: "Maintain a scalable operating model",
 
-    v18_eyebrow: "Vision at 18 months",
+    v18_eyebrow: "Vision at 12 months",
     v18_title: "The future of ODY",
     v18_lead:
-      "At the end of the next 18 months, ODY aims to become a fully integrated platform combining discovery, loyalty, marketing, reservations and payments.",
+      "At the end of the next 12 months, ODY aims to become a fully integrated platform combining discovery, loyalty, marketing, reservations and payments.",
     v18_outro:
       "Used daily by hundreds of thousands of consumers and more than 2,000 merchants across multiple countries.",
     v18_p1: "Discovery",
@@ -655,16 +667,16 @@ const I18N = {
     hero_title: "ODY：打造本地商业的操作系统",
     hero_lead:
       "ODY 正在构建一个完整的生态系统，帮助本地商户通过单一平台吸引客户、提升留存、创造收入并管理运营。",
-    hero_stat1_label: "目标商户门店（18 个月）",
-    hero_stat2_label: "目标活跃用户（18 个月）",
-    hero_stat3_label: "目标每月营业额（18 个月）",
+    hero_stat1_label: "目标商户门店（12 个月）",
+    hero_stat2_label: "目标活跃用户（12 个月）",
+    hero_stat3_label: "目标每月营业额（12 个月）",
     hero_cta_primary: "申请数据室访问",
     hero_cta_secondary: "了解生态系统",
 
     eco_eyebrow: "ODY 生态系统",
-    eco_title: "三层互补业务架构，统一平台承载",
+    eco_title: "三大互补系统，构筑完整商业生态链",
     eco_lead:
-      "ODY 生态由三大协同业务板块构成，打通消费者与商户两端，形成强大网络效应。",
+      "ODY 生态由三大协同业务板块组成，打通消费者端与商户端，并依托自有支付系统形成完整商业闭环。",
 
     nav_structure: "架构",
     struct_eyebrow: "集团组织架构",
@@ -709,11 +721,11 @@ const I18N = {
 
     eco_pay_tag: "金融支付层",
     eco_pay_title: "ODY Pay",
-    eco_pay_desc: "自研一体化支付基础设施，打通全业务链路：",
-    eco_pay_f1: "支付终端",
-    eco_pay_f2: "信贷",
-    eco_pay_f3: "在线支付",
-    eco_pay_f4: "发卡",
+    eco_pay_desc: "自研一体化支付基础设施，贯通全业务链路，覆盖四大板块：",
+    eco_pay_f1: "线下支付终端",
+    eco_pay_f2: "商户信贷服务",
+    eco_pay_f3: "线上在线支付",
+    eco_pay_f4: "专属发卡业务",
     eco_pay_note:
       "既为商户、消费者打造统一流畅的消费闭环，也为平台带来持续稳定的交易手续费收入。",
 
@@ -729,7 +741,7 @@ const I18N = {
     vision_c3_items: "支付 · 交易处理 · 金融服务",
 
     snap_eyebrow: "公司概览",
-    snap_title: "18 个月目标",
+    snap_title: "12 个月目标",
     snap_lead: "宏大而有章法的目标，依托严谨的执行与经常性收入模式。",
     snap_k1_value: "2,000+",
     snap_k1_label: "活跃商户门店",
@@ -764,15 +776,21 @@ const I18N = {
     cap_future_title: "未来股权结构表（投资前）",
     cap_future_desc:
       "为支持未来招聘并吸引顶尖人才，ODY 计划设立占公司 5% 的 BSPCE / 员工期权池。",
-    cap_founders: "创始人",
+    cap_founders: "创始团队",
     cap_bspce: "BSPCE 期权池",
     cap_bspce_full: "BSPCE 期权池（员工股票期权）",
-    cap_investor: "投资人",
+    cap_investor: "新增投资方",
 
     cap_post_title: "投资后股权结构表",
     cap_post_desc: "假设条件：",
     cap_post_a1: "设立 5% 的 BSPCE 期权池",
-    cap_post_a2: "新投资方投后取得公司 10% 股权",
+    cap_post_a2: "新投资方投后取得公司约 9.09% 股权",
+    cap_post_intro:
+      "本公司投前估值 1000 万欧元，公司初始总股本设定为 10000 股，由三位创始人全额持有。本次计划融资 100 万欧元，通过增发新股方式稀释股权，融资完成后投资方持有约 9.09% 股份，创始团队合计持有剩余股权。",
+    cap_post_logic_title: "测算逻辑",
+    cap_post_logic_1: "投前估值 1000 万€，募资 100 万€ → 投后总估值 1100 万€",
+    cap_post_logic_2: "投资方占比 = 100 / 1100 ≈ 9.09%",
+    cap_post_logic_3: "原有 10000 股对应 90.91%，新增股份 ≈ 1000 股",
 
     fund_eyebrow: "融资目标",
     fund_title: "加速企业下一阶段高速增长",
@@ -801,7 +819,7 @@ const I18N = {
     funds_1_d6: "提升系统承载与扩容能力",
     funds_1_d7: "布局未来人工智能相关功能研发",
 
-    funds_2_title: "客户获客与市场推广",
+    funds_2_title: "C 端用户获客推广",
     funds_2_d1: "面向餐厅、本地实体商户开展批量 B 端拓客活动",
     funds_2_d2: "大规模内容种草、达人网红合作营销体系",
     funds_2_d3: "线下品牌推广大使计划",
@@ -810,8 +828,8 @@ const I18N = {
     funds_2_d6: "搜索引擎优化、跨界商务合作",
     funds_2_d7: "全域品牌曝光建设",
 
-    funds_3_title: "人才招聘与日常运营",
-    funds_3_d1: "扩张线下销售拓客团队",
+    funds_3_title: "B 端商户拓展（商家获客）",
+    funds_3_d1: "B 端商户开发拓展，用于线下门店招商、商户销售团队拓展、商家入驻扶持、餐饮实体商户商务洽谈等，快速扩充平台合作商家数量。",
     funds_3_d2: "增补产品、技术岗位人才",
     funds_3_d3: "扩容客户成功服务团队",
     funds_3_d4: "搭建商户入驻落地服务体系",
@@ -831,8 +849,8 @@ const I18N = {
     funds_5_d4: "财务审计、会计相关费用",
 
     road_eyebrow: "战略路线图",
-    road_title: "18 个月战略发展路线图",
-    road_lead: "未来 18 个月围绕五大核心业务线落地执行。",
+    road_title: "12 个月战略发展路线图",
+    road_lead: "未来 12 个月围绕五大核心业务线落地执行。",
 
     road_1_title: "商业规模扩张",
     road_1_intro: "目标成为本地生活商户赛道头部平台。",
@@ -857,7 +875,7 @@ const I18N = {
 
     road_4_title: "财务经营目标",
     road_4_intro: "搭建可规模化复制的订阅收入商业模式。",
-    road_4_o1: "月度经常性收入突破 20 万欧元",
+    road_4_o1: "稳定月度收入突破 20 万欧元",
     road_4_streams: "平台多元收入来源：",
     road_4_s1: "ODY Pro 商户订阅服务费",
     road_4_s2: "支付交易手续费分成",
@@ -873,10 +891,10 @@ const I18N = {
     road_5_o3: "根据当地市场需求适配平台功能",
     road_5_o4: "维持轻量化、可扩张的标准化运营体系",
 
-    v18_eyebrow: "18 个月愿景",
+    v18_eyebrow: "12 个月愿景",
     v18_title: "ODY 的未来",
     v18_lead:
-      "在未来 18 个月结束时，ODY 将成为一个完全集成的平台，融合发现、忠诚度、营销、预订与支付。",
+      "在未来 12 个月结束时，ODY 将成为一个完全集成的平台，融合发现、忠诚度、营销、预订与支付。",
     v18_outro:
       "每天被数十万消费者和超过 2,000 家商户在多个国家使用。",
     v18_p1: "发现",
@@ -917,7 +935,7 @@ const I18N = {
     pipe_placeholder: "数据从 CRM 导入 — 即将上线",
 
     final_eyebrow: "总结",
-    final_title: "ODY 不仅仅是一款餐厅探店 App",
+    final_title: "ODY 不只是一款餐厅探店App，更是一站式商户经营生态平台",
     final_lead:
       "而是一套完整的本地商业生态体系，由三层业务相互赋能。",
     final_l1_title: "ODY B2C",

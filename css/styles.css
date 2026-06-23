@@ -369,6 +369,23 @@ html.lang-zh .lead { line-height: 1.85; }
 .cap-pct { font-weight: 700; letter-spacing: -0.02em; }
 .cap-tbd { color: var(--gray-400); font-style: italic; font-weight: 400; }
 
+/* Post-money calculation logic note */
+.cap-logic {
+  margin-top: 40px; padding: 28px 32px;
+  background: var(--gray-50); border: 1px solid var(--gray-200); border-radius: var(--radius);
+}
+.cap-logic__intro { font-size: 15px; line-height: 1.65; color: var(--gray-700); margin-bottom: 22px; }
+.cap-logic__title {
+  font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 14px;
+}
+.cap-logic__list { display: grid; gap: 10px; }
+.cap-logic__list li { position: relative; padding-left: 22px; font-size: 14.5px; color: var(--gray-700); line-height: 1.5; }
+.cap-logic__list li::before {
+  content: ""; position: absolute; left: 2px; top: 8px; width: 8px; height: 8px;
+  border-radius: 2px; background: var(--accent);
+}
+
 /* ---------------------------------------------------------------- Use of funds */
 .funds-layout { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: center; }
 .funds-chart, .funds-list { min-width: 0; }

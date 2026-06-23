@@ -107,11 +107,11 @@ const I18N = {
     snap_title: "Objectifs à 12 mois",
     snap_lead:
       "Des objectifs ambitieux mais structurés, alignés sur une exécution disciplinée et un modèle de revenus récurrents.",
-    snap_k1_value: "2 000+",
+    snap_k1_value: "1 000+",
     snap_k1_label: "Établissements marchands actifs",
     snap_k2_value: "300 000+",
     snap_k2_label: "Utilisateurs actifs",
-    snap_k3_value: "200 000 €+",
+    snap_k3_value: "100 000 €+",
     snap_k3_label: "Revenu mensuel récurrent (MRR)",
     snap_k4_value: "3",
     snap_k4_label: "Pays d'expansion",
@@ -130,7 +130,7 @@ const I18N = {
 
     cap_current_title: "Table de capitalisation actuelle",
     cap_current_desc:
-      "ODY est actuellement détenue à 100 % par ses trois cofondateurs.",
+      "ODY est actuellement détenue à 100 % par ses trois cofondateurs, pour un capital total de 10 000 actions.",
     cap_th_shareholder: "Actionnaire",
     cap_th_shares: "Actions détenues",
     cap_th_ownership: "Détention",
@@ -150,13 +150,13 @@ const I18N = {
     cap_post_title: "Table de capitalisation post-investissement",
     cap_post_desc: "Hypothèses retenues :",
     cap_post_a1: "Création d'un pool de BSPCE de 5 %",
-    cap_post_a2: "Nouvel investisseur acquérant ≈ 9,09 % du capital post-money",
+    cap_post_a2: "Nouvel investisseur acquérant 10 % du capital post-money",
     cap_post_intro:
-      "La société est valorisée 10 M€ en pré-money, avec un capital initial de 10 000 actions détenues à 100 % par les trois fondateurs. La levée de 1 M€ s'effectue par émission de nouvelles actions : à l'issue de l'opération, l'investisseur détient environ 9,09 % et l'équipe fondatrice le reste.",
+      "La société est valorisée 9 M€ en pré-money (10 M€ post-money), avec un capital initial de 10 000 actions détenues à 100 % par les trois fondateurs. La levée de 1 M€ par émission de nouvelles actions porte l'investisseur à 10 % et l'équipe fondatrice à 90 %.",
     cap_post_logic_title: "Logique de calcul",
-    cap_post_logic_1: "Valorisation pré-money 10 M€ + levée 1 M€ → valorisation post-money 11 M€",
-    cap_post_logic_2: "Part de l'investisseur = 100 / 1 100 ≈ 9,09 %",
-    cap_post_logic_3: "Les 10 000 actions existantes représentent 90,91 %, soit ≈ 1 000 actions nouvelles émises",
+    cap_post_logic_1: "Valorisation pré-money = 10 − 1 = 9 M€ (post-money 10 M€)",
+    cap_post_logic_2: "Investisseur 10 %, fondateurs 90 % au total",
+    cap_post_logic_3: "Les 10 000 actions existantes représentent 90 %, soit ≈ 1 111 actions nouvelles émises pour l'investisseur",
 
     // Fundraising objective
     fund_eyebrow: "Objectif de levée",
@@ -221,11 +221,11 @@ const I18N = {
     road_eyebrow: "Feuille de route stratégique",
     road_title: "Feuille de route à 12 mois",
     road_lead:
-      "Cinq chantiers stratégiques structurent l'exécution sur les 18 prochains mois.",
+      "Cinq chantiers stratégiques structurent l'exécution sur les 12 prochains mois.",
 
     road_1_title: "Croissance commerciale",
     road_1_intro: "ODY vise à devenir une plateforme de référence pour les commerces locaux.",
-    road_1_o1: "2 000+ établissements marchands actifs",
+    road_1_o1: "1 000+ établissements marchands actifs",
     road_1_o2: "Déploiement national d'ODY Pro",
     road_1_o3: "Partenariats stratégiques avec groupes de restauration et multi-sites",
     road_1_o4: "Augmentation continue du revenu par commerçant",
@@ -247,7 +247,7 @@ const I18N = {
 
     road_4_title: "Objectifs financiers",
     road_4_intro: "Construire un modèle de revenus récurrents scalable.",
-    road_4_o1: "200 000 €+ de revenu mensuel récurrent",
+    road_4_o1: "100 000 €+ de revenu mensuel récurrent",
     road_4_streams: "Sources de revenus :",
     road_4_s1: "Abonnements ODY Pro",
     road_4_s2: "Commissions sur paiements",
@@ -267,9 +267,9 @@ const I18N = {
     v18_eyebrow: "Vision à 12 mois",
     v18_title: "Le futur d'ODY",
     v18_lead:
-      "À l'issue des 18 prochains mois, ODY ambitionne de devenir une plateforme pleinement intégrée combinant découverte, fidélité, marketing, réservations et paiements.",
+      "À l'issue des 12 prochains mois, ODY ambitionne de devenir une plateforme pleinement intégrée combinant découverte, fidélité, marketing, réservations et paiements.",
     v18_outro:
-      "Utilisée quotidiennement par des centaines de milliers de consommateurs et plus de 2 000 commerçants dans plusieurs pays.",
+      "Utilisée quotidiennement par des centaines de milliers de consommateurs et plus de 1 000 commerçants dans plusieurs pays.",
     v18_p1: "Découverte",
     v18_p2: "Fidélité",
     v18_p3: "Marketing",
@@ -430,11 +430,11 @@ const I18N = {
     snap_title: "12-month targets",
     snap_lead:
       "Ambitious yet structured targets, aligned with disciplined execution and a recurring revenue model.",
-    snap_k1_value: "2,000+",
+    snap_k1_value: "1,000+",
     snap_k1_label: "Active merchant locations",
     snap_k2_value: "300,000+",
     snap_k2_label: "Active users",
-    snap_k3_value: "€200,000+",
+    snap_k3_value: "€100,000+",
     snap_k3_label: "Monthly recurring revenue (MRR)",
     snap_k4_value: "3",
     snap_k4_label: "Countries expansion",
@@ -451,7 +451,7 @@ const I18N = {
     cap_tab_post: "Post-investment",
 
     cap_current_title: "Current cap table",
-    cap_current_desc: "ODY is currently owned 100% by its three co-founders.",
+    cap_current_desc: "ODY is currently 100% owned by its three co-founders, for a total of 10,000 shares.",
     cap_th_shareholder: "Shareholder",
     cap_th_shares: "Shares held",
     cap_th_ownership: "Ownership",
@@ -471,13 +471,13 @@ const I18N = {
     cap_post_title: "Post-investment cap table",
     cap_post_desc: "Assumptions:",
     cap_post_a1: "Creation of a 5% BSPCE pool",
-    cap_post_a2: "New investor acquiring ≈ 9.09% ownership post-money",
+    cap_post_a2: "New investor acquiring 10% ownership post-money",
     cap_post_intro:
-      "The company is valued at €10M pre-money, with an initial 10,000 shares fully held by the three founders. The €1M round is raised by issuing new shares: post-round, the investor holds about 9.09% and the founding team the remainder.",
+      "The company is valued at €9M pre-money (€10M post-money), with an initial 10,000 shares fully held by the three founders. The €1M round, raised by issuing new shares, brings the investor to 10% and the founding team to 90%.",
     cap_post_logic_title: "Calculation logic",
-    cap_post_logic_1: "€10M pre-money + €1M raised → €11M post-money valuation",
-    cap_post_logic_2: "Investor stake = 100 / 1,100 ≈ 9.09%",
-    cap_post_logic_3: "The existing 10,000 shares represent 90.91%, i.e. ≈ 1,000 new shares issued",
+    cap_post_logic_1: "Pre-money = 10 − 1 = €9M (post-money €10M)",
+    cap_post_logic_2: "Investor 10%, founders 90% in total",
+    cap_post_logic_3: "The existing 10,000 shares represent 90%, i.e. ≈ 1,111 new shares issued to the investor",
 
     fund_eyebrow: "Fundraising objective",
     fund_title: "Accelerating the next phase of growth",
@@ -542,7 +542,7 @@ const I18N = {
 
     road_1_title: "Commercial growth",
     road_1_intro: "ODY aims to become a leading platform for local businesses.",
-    road_1_o1: "2,000+ active merchant locations",
+    road_1_o1: "1,000+ active merchant locations",
     road_1_o2: "Nationwide deployment of ODY Pro",
     road_1_o3: "Strategic partnerships with restaurant groups and multi-site operators",
     road_1_o4: "Continuous increase in revenue per merchant",
@@ -564,7 +564,7 @@ const I18N = {
 
     road_4_title: "Financial objectives",
     road_4_intro: "Build a scalable recurring revenue model.",
-    road_4_o1: "€200,000+ monthly recurring revenue",
+    road_4_o1: "€100,000+ monthly recurring revenue",
     road_4_streams: "Revenue streams:",
     road_4_s1: "ODY Pro subscriptions",
     road_4_s2: "Payment commissions",
@@ -585,7 +585,7 @@ const I18N = {
     v18_lead:
       "At the end of the next 12 months, ODY aims to become a fully integrated platform combining discovery, loyalty, marketing, reservations and payments.",
     v18_outro:
-      "Used daily by hundreds of thousands of consumers and more than 2,000 merchants across multiple countries.",
+      "Used daily by hundreds of thousands of consumers and more than 1,000 merchants across multiple countries.",
     v18_p1: "Discovery",
     v18_p2: "Loyalty",
     v18_p3: "Marketing",
@@ -664,7 +664,7 @@ const I18N = {
     nav_cta: "申请访问",
 
     hero_eyebrow: "执行摘要",
-    hero_title: "ODY：打造本地商业的操作系统",
+    hero_title: "ODY 本地生活平台，重构本地商业完整生态",
     hero_lead:
       "ODY 正在构建一个完整的生态系统，帮助本地商户通过单一平台吸引客户、提升留存、创造收入并管理运营。",
     hero_stat1_label: "目标商户门店（12 个月）",
@@ -743,11 +743,11 @@ const I18N = {
     snap_eyebrow: "公司概览",
     snap_title: "12 个月目标",
     snap_lead: "宏大而有章法的目标，依托严谨的执行与经常性收入模式。",
-    snap_k1_value: "2,000+",
+    snap_k1_value: "1,000+",
     snap_k1_label: "活跃商户门店",
     snap_k2_value: "300,000+",
     snap_k2_label: "活跃用户",
-    snap_k3_value: "€200,000+",
+    snap_k3_value: "€100,000+",
     snap_k3_label: "月度经常性收入（MRR）",
     snap_k4_value: "3",
     snap_k4_label: "拓展国家",
@@ -784,13 +784,13 @@ const I18N = {
     cap_post_title: "投资后股权结构表",
     cap_post_desc: "假设条件：",
     cap_post_a1: "设立 5% 的 BSPCE 期权池",
-    cap_post_a2: "新投资方投后取得公司约 9.09% 股权",
+    cap_post_a2: "新投资方投后取得公司 10% 股权",
     cap_post_intro:
-      "本公司投前估值 1000 万欧元，公司初始总股本设定为 10000 股，由三位创始人全额持有。本次计划融资 100 万欧元，通过增发新股方式稀释股权，融资完成后投资方持有约 9.09% 股份，创始团队合计持有剩余股权。",
+      "本公司投前估值 900 万欧元，公司初始总股本为 10000 股，由三位创始人全额持有。本次计划融资 100 万欧元（投后估值 1000 万欧元），通过增发新股方式稀释股权，融资完成后投资方持有 10% 股份，创始团队合计持有 90% 股权。",
     cap_post_logic_title: "测算逻辑",
-    cap_post_logic_1: "投前估值 1000 万€，募资 100 万€ → 投后总估值 1100 万€",
-    cap_post_logic_2: "投资方占比 = 100 / 1100 ≈ 9.09%",
-    cap_post_logic_3: "原有 10000 股对应 90.91%，新增股份 ≈ 1000 股",
+    cap_post_logic_1: "投前估值 = 1000 − 100 = 900 万€（投后估值 1000 万€）",
+    cap_post_logic_2: "投资方占股 10%，创始人合计 90%",
+    cap_post_logic_3: "原有 10000 股（90%），对应投资方增发 1111 股左右",
 
     fund_eyebrow: "融资目标",
     fund_title: "加速企业下一阶段高速增长",
@@ -854,7 +854,7 @@ const I18N = {
 
     road_1_title: "商业规模扩张",
     road_1_intro: "目标成为本地生活商户赛道头部平台。",
-    road_1_o1: "达成 2000 家以上活跃合作门店",
+    road_1_o1: "达成 1000 家以上活跃合作门店",
     road_1_o2: "在本国全境完成 ODY Pro 商户系统全覆盖落地",
     road_1_o3: "与连锁餐饮集团、多门店商家达成深度战略合作",
     road_1_o4: "持续提升单商户为平台贡献的营收",
@@ -875,7 +875,7 @@ const I18N = {
 
     road_4_title: "财务经营目标",
     road_4_intro: "搭建可规模化复制的订阅收入商业模式。",
-    road_4_o1: "稳定月度收入突破 20 万欧元",
+    road_4_o1: "稳定月度收入突破 10 万欧元",
     road_4_streams: "平台多元收入来源：",
     road_4_s1: "ODY Pro 商户订阅服务费",
     road_4_s2: "支付交易手续费分成",
@@ -896,7 +896,7 @@ const I18N = {
     v18_lead:
       "在未来 12 个月结束时，ODY 将成为一个完全集成的平台，融合发现、忠诚度、营销、预订与支付。",
     v18_outro:
-      "每天被数十万消费者和超过 2,000 家商户在多个国家使用。",
+      "每天被数十万消费者和超过 1,000 家商户在多个国家使用。",
     v18_p1: "发现",
     v18_p2: "忠诚度",
     v18_p3: "营销",

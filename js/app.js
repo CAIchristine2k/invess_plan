@@ -120,6 +120,38 @@
   }
   document.addEventListener("ody:langchange", setupCountryCycle);
 
+  /* ---------------------------------------------------- Hero stat count-up */
+  function setupCountUp() {
+    const vals = document.querySelectorAll(".hero__stat-value");
+    if (!vals.length) return;
+    if (reduceMotion || !("IntersectionObserver" in window)) return; // leave static values
+    const grp = (lang) => lang === "fr" ? "fr-FR" : lang === "zh" ? "zh-CN" : "en-US";
+    function run(el) {
+      const original = el.textContent.trim();
+      const m = original.match(/^([^\d]*)([\d.,\s ]*\d)(.*)$/);
+      if (!m) return;
+      const prefix = m[1], suffix = m[3];
+      const target = parseInt(m[2].replace(/[^\d]/g, ""), 10);
+      if (!isFinite(target)) return;
+      const stat = el.closest(".hero__stat");
+      const fmt = (n) => { try { return new Intl.NumberFormat(grp(typeof currentLang !== "undefined" ? currentLang : "fr")).format(n); } catch (e) { return String(n); } };
+      const dur = 1300; let startTs = null;
+      if (stat) stat.classList.add("is-counting");
+      function tick(ts) {
+        if (startTs === null) startTs = ts;
+        const p = Math.min(1, (ts - startTs) / dur);
+        const eased = 1 - Math.pow(1 - p, 3);
+        if (p < 1) { el.textContent = prefix + fmt(Math.round(target * eased)) + suffix; requestAnimationFrame(tick); }
+        else { el.textContent = original; if (stat) stat.classList.remove("is-counting"); }
+      }
+      requestAnimationFrame(tick);
+    }
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { if (e.isIntersecting) { run(e.target); obs.unobserve(e.target); } });
+    }, { threshold: 0.6 });
+    vals.forEach((v) => obs.observe(v));
+  }
+
   /* ---------------------------------------------------- Footer year */
   const yr = document.getElementById("year");
   if (yr) yr.textContent = new Date().getFullYear();
@@ -135,6 +167,7 @@
     renderAllCharts();   // build all SVG charts/tables
     setupCountryCycle(); // rotating ODY <country> label
     observeReveals();    // fade-in
+    setupCountUp();      // animated hero stat counters
     onScroll();
   }
 })();

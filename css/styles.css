@@ -18,19 +18,19 @@
   --white:      #FFFFFF;
 
   /* Brand accents */
-  --accent:        #4338CA;   /* indigo */
-  --accent-2:      #6366F1;
-  --accent-soft:   #EEF0FF;
-  --violet:        #7C3AED;
+  --accent:        #8442FF;   /* ODY purple (pro.ody.app) */
+  --accent-2:      #9E6BFF;
+  --accent-soft:   #F3ECFF;
+  --violet:        #8442FF;
   --emerald:       #0F9D78;
   --emerald-soft:  #E7F6F1;
   --amber:         #C2820B;
   --rose:          #BE3455;
 
   /* Chart series */
-  --c1: #4338CA;
-  --c2: #6366F1;
-  --c3: #8B8AF5;
+  --c1: #8442FF;
+  --c2: #9E6BFF;
+  --c3: #C0A8FF;
   --c4: #0F9D78;
   --c5: #C2820B;
 
@@ -211,7 +211,7 @@ html.lang-zh .lead { line-height: 1.85; }
 .hero__bg {
   position: absolute; inset: 0; z-index: 0; pointer-events: none;
   background:
-    radial-gradient(1100px 520px at 78% -8%, rgba(99,102,241,.10), transparent 60%),
+    radial-gradient(1100px 520px at 78% -8%, rgba(132,66,255,.10), transparent 60%),
     radial-gradient(800px 420px at 12% 4%, rgba(15,157,120,.06), transparent 55%);
 }
 .hero__bg::after {
@@ -473,7 +473,7 @@ html.lang-zh .lead { line-height: 1.85; }
   width: 150px; height: 150px; border-radius: 50%;
   background: radial-gradient(circle at 35% 30%, var(--accent-2), var(--accent));
   display: flex; align-items: center; justify-content: center; z-index: 3;
-  box-shadow: 0 0 0 1px rgba(255,255,255,.15), 0 0 70px rgba(99,102,241,.5);
+  box-shadow: 0 0 0 1px rgba(255,255,255,.15), 0 0 70px rgba(132,66,255,.5);
 }
 .orbit__core-mark { font-size: 36px; font-weight: 800; letter-spacing: -0.04em; color: #fff; }
 .orbit__ring { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 1px solid rgba(255,255,255,.1); border-radius: 50%; }
@@ -645,6 +645,46 @@ html.lang-zh .lead { line-height: 1.85; }
 .reveal.is-in { opacity: 1; transform: none; }
 .reveal-stagger > * { opacity: 0; transform: translateY(20px); transition: opacity .6s var(--ease), transform .6s var(--ease); }
 .reveal-stagger.is-in > * { opacity: 1; transform: none; }
+
+/* ---------------------------------------------------------------- Extra animations */
+/* Staggered cascade for grids of reveal cards */
+.eco-grid .reveal:nth-child(2) { transition-delay: .09s; }
+.eco-grid .reveal:nth-child(3) { transition-delay: .18s; }
+.org-branches.is-in > *:nth-child(2) { transition-delay: .12s; }
+.org-branches.is-in > *:nth-child(3) { transition-delay: .24s; }
+.fund-item { opacity: 0; transform: translateY(16px); animation: fundIn .6s var(--ease) forwards; }
+.fund-item:nth-child(2) { animation-delay: .08s; }
+.fund-item:nth-child(3) { animation-delay: .16s; }
+.fund-item:nth-child(4) { animation-delay: .24s; }
+.fund-item:nth-child(5) { animation-delay: .32s; }
+@keyframes fundIn { to { opacity: 1; transform: none; } }
+
+/* Hero entrance — title, lead, stats rise in sequence */
+.hero__inner.is-in .hero__title { animation: heroRise .8s var(--ease) both; }
+.hero__inner.is-in .hero__lead { animation: heroRise .8s var(--ease) .12s both; }
+.hero__inner.is-in .hero__stats { animation: heroRise .8s var(--ease) .24s both; }
+@keyframes heroRise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+
+/* Hero background — slow drifting glow */
+.hero__bg { animation: heroDrift 18s ease-in-out infinite alternate; }
+@keyframes heroDrift { from { transform: translate3d(0,0,0) scale(1); } to { transform: translate3d(-2%,1.5%,0) scale(1.06); } }
+
+/* Hero stat values pop slightly when counting up */
+.hero__stat-value { transition: transform .3s var(--ease); }
+.hero__stat.is-counting .hero__stat-value { transform: scale(1.04); }
+
+/* Animated underline on nav links */
+.nav__link { position: relative; }
+.nav__link::after {
+  content: ""; position: absolute; left: 12px; right: 12px; bottom: 6px; height: 1.5px;
+  background: var(--accent); border-radius: 2px;
+  transform: scaleX(0); transform-origin: left; transition: transform .3s var(--ease);
+}
+.nav__link:hover::after { transform: scaleX(1); }
+
+/* Eco-card icon gentle lift on card hover */
+.eco-card__tag { transition: transform .35s var(--ease), color .35s var(--ease); }
+.eco-card:hover .eco-card__tag { transform: translateY(-1px); }
 
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: .001ms !important; transition-duration: .001ms !important; scroll-behavior: auto !important; }

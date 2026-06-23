@@ -92,7 +92,7 @@ function renderDonut(host, segments, opts) {
 /* ------------------------------------------------------------------ */
 /* CAP TABLE charts + tables                                          */
 /* ------------------------------------------------------------------ */
-const CAP_COLORS = { f1: "#4338CA", f2: "#6366F1", f3: "#8B8AF5", founders: "#4338CA", investor: "#C2820B" };
+const CAP_COLORS = { f1: "#8442FF", f2: "#9E6BFF", f3: "#C0A8FF", founders: "#8442FF", investor: "#C2820B" };
 const TOTAL_SHARES = 10000; // total share count of the company
 
 function fmtNum(n) {
@@ -132,10 +132,10 @@ function renderCapTables() {
   trTotal.innerHTML = `<td>Total</td><td>${fmtNum(currentTotal)}</td><td class="num">100%</td>`;
   cb.appendChild(trTotal);
 
-  // POST — new shares issued: founders keep 10,000 (90.91%), investor 1,000 (9.09%) → 11,000 total
+  // POST — new shares issued for 10% stake: 10,000 / 0.9 − 10,000 ≈ 1,111 → 11,111 total
   const post = [
-    { key: "founders", labelKey: "cap_founders", shares: 10000, pct: 90.91, color: CAP_COLORS.founders },
-    { key: "investor", labelKey: "cap_investor", shares: 1000, pct: 9.09, color: CAP_COLORS.investor },
+    { key: "founders", labelKey: "cap_founders", shares: 10000, pct: 90, color: CAP_COLORS.founders },
+    { key: "investor", labelKey: "cap_investor", shares: 1111, pct: 10, color: CAP_COLORS.investor },
   ];
   renderDonut(
     document.getElementById("capChartPost"),
@@ -172,8 +172,8 @@ function fmtEur(amount) {
   }
 }
 const FUNDS = [
-  { key: "f1", titleKey: "funds_1_title", pct: 30, color: "#4338CA", details: ["funds_1_d1","funds_1_d2","funds_1_d3","funds_1_d4","funds_1_d5","funds_1_d6","funds_1_d7"] },
-  { key: "f2", titleKey: "funds_2_title", pct: 30, color: "#6366F1", details: ["funds_2_d1","funds_2_d2","funds_2_d3","funds_2_d4","funds_2_d5","funds_2_d6","funds_2_d7"] },
+  { key: "f1", titleKey: "funds_1_title", pct: 30, color: "#8442FF", details: ["funds_1_d1","funds_1_d2","funds_1_d3","funds_1_d4","funds_1_d5","funds_1_d6","funds_1_d7"] },
+  { key: "f2", titleKey: "funds_2_title", pct: 30, color: "#9E6BFF", details: ["funds_2_d1","funds_2_d2","funds_2_d3","funds_2_d4","funds_2_d5","funds_2_d6","funds_2_d7"] },
   { key: "f3", titleKey: "funds_3_title", pct: 30, color: "#0F9D78", details: ["funds_3_d1"] },
   { key: "f4", titleKey: "funds_4_title", pct: 5, color: "#C2820B", details: ["funds_4_d1","funds_4_d2","funds_4_d3","funds_4_d4","funds_4_d5"] },
   { key: "f5", titleKey: "funds_5_title", pct: 5, color: "#BE3455", details: ["funds_5_d1","funds_5_d2","funds_5_d3","funds_5_d4"] },
@@ -256,8 +256,8 @@ function renderFunds() {
 function renderEcoDiagram() {
   const host = document.getElementById("ecoDiagram");
   const nodes = [
-    { titleKey: "eco_app_title", tagKey: "eco_app_tag", color: "#4338CA" },
-    { titleKey: "eco_pro_title", tagKey: "eco_pro_tag", color: "#6366F1" },
+    { titleKey: "eco_app_title", tagKey: "eco_app_tag", color: "#8442FF" },
+    { titleKey: "eco_pro_title", tagKey: "eco_pro_tag", color: "#9E6BFF" },
     { titleKey: "eco_pay_title", tagKey: "eco_pay_tag", color: "#0F9D78" },
   ];
   host.innerHTML =
@@ -379,8 +379,8 @@ function renderPipeline() {
   const board = document.getElementById("pipelineBoard");
   const stages = [
     { key: "pipe_stage_lead", color: "#A1A1AA", n: 2 },
-    { key: "pipe_stage_qualified", color: "#6366F1", n: 2 },
-    { key: "pipe_stage_demo", color: "#4338CA", n: 1 },
+    { key: "pipe_stage_qualified", color: "#9E6BFF", n: 2 },
+    { key: "pipe_stage_demo", color: "#8442FF", n: 1 },
     { key: "pipe_stage_proposal", color: "#C2820B", n: 1 },
     { key: "pipe_stage_won", color: "#0F9D78", n: 1 },
   ];
